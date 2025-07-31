@@ -222,14 +222,14 @@ export const themeConfig = {
     // 是否开启封面显示
     showCover: {
       // 是否开启封面显示 文章不设置cover封面会显示异常，可以设置下方默认封面
-      enable: flase,
+      enable: true,
       // 封面布局方式: left | right | both
-      coverLayout: 'both',
+      coverLayout: 'right',
       // 默认封面(随机展示)
       defaultCover: [
-        'https://example.com/1.avif',
-        'https://example.com/2.avif',
-        'https://example.com/3.avif'
+        'https://picui.cn/thumbnails/3613b7628dcb58d5a17e10b51234e8ec.png',
+        'https://picui.cn/thumbnails/d525a8b821c06a84a491d19127dccc7e.png',
+        'https://picui.cn/thumbnails/d525a8b821c06a84a491d19127dccc7e.png'
       ]
     }
   },
