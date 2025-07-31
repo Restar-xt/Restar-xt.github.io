@@ -3,7 +3,7 @@ export const themeConfig = {
   // 站点信息
   siteMeta: {
     // 站点标题
-    title: "Curve",
+    title: "zxt's blog",
     // 站点描述
     description: "Hello World",
     // 站点logo
@@ -14,16 +14,16 @@ export const themeConfig = {
     lang: "zh-CN",
     // 作者
     author: {
-      name: "Admin",
+      name: "xiaotong zhang",
       cover: "/images/logo/logo.webp",
-      email: "114514@gmail.com",
-      link: "https://www.imsyy.top",
+      email: "xiaotongzhang.zxt@gmail.com",
+      link: "https://www.xiaotong.blog",
     },
   },
   // 备案信息
-  icp: "萌ICP备114514号",
+  icp: "光ICP备380780号",
   // 建站日期
-  since: "2020-07-28",
+  since: "2025-07-31",
   // 每页文章数据
   postSize: 8,
   // inject
@@ -239,28 +239,12 @@ export const themeConfig = {
     social: [
       {
         icon: "email",
-        link: "mailto:one@imsyy.top",
+        link: "mailto:xiaotongzhang.zxt@gamil.com",
       },
       {
         icon: "github",
-        link: "https://www.github.com/imsyy/",
-      },
-      {
-        icon: "telegram",
-        link: "https://t.me/bottom_user",
-      },
-      {
-        icon: "bilibili",
-        link: "https://space.bilibili.com/98544142",
-      },
-      {
-        icon: "qq",
-        link: "https://res.abeim.cn/api/qq/?qq=1539250352",
-      },
-      {
-        icon: "twitter-x",
-        link: "https://twitter.com/iimmsyy",
-      },
+        link: "https://www.github.com/Restar-xt/",
+      }
     ],
     // sitemap
     sitemap: [
@@ -358,7 +342,7 @@ export const themeConfig = {
       // 倒计时日期
       data: {
         name: "春节",
-        date: "2025-01-29",
+        date: "2026-02-17",
       },
     },
     // 站点数据
