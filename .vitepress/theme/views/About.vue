@@ -55,27 +55,33 @@
       <!-- 性格 -->
       <div class="about-item character" style="--color: #4298b4">
         <span class="tip">性格</span>
-        <span class="title2">热情的保护者</span>
+        <span class="title2">热情的守卫者</span>
         <span class="title2" style="color: var(--color)">ISFJ-T </span>
         <span class="more">
           在
           <a href="https://www.16personalities.com/ch/" target="_blank">16personalities</a>
           了解更多关于
           <a href="https://www.16personalities.com/ch/istj-%E4%BA%BA%E6%A0%BC" target="_blank">
-            保护者
+            守卫者
           </a>
         </span>
         <img
-          src="https://picui.cn/thumbnails/8393d6fa277a7d625a9b29b3faad6b6d.png"
+          src="https://free.picui.cn/free/2025/07/31/688af6cd4f663.png"
           alt="male"
           class="male"
         />
       </div>
-      <!-- 座右铭 -->
+      <!-- 目标 -->
       <div class="about-item">
-        <span class="tip">座右铭</span>
-        <span class="title1" style="margin-top: 20px">脚踏实地，</span>
-        <span class="title2">一丝不苟。</span>
+        <span class="tip">目标</span>
+        <span class="title1" style="margin-top: 20px">Chasing the Light，</span>
+        <span class="title2">and Control it。</span>
+        <!-- 新添加的图片 -->
+        <img
+          src="https://picui.cn/thumbnails/3613b7628dcb58d5a17e10b51234e8ec.png" 
+          alt="Laser"
+          class="motto-image"
+        />
       </div>
     </div>
     <div class="about-content" style="grid-template-columns: 1fr 1fr">
