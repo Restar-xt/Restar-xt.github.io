@@ -228,7 +228,6 @@ export const themeConfig = {
       // 默认封面(随机展示)
       defaultCover: [
         'https://picui.cn/thumbnails/3613b7628dcb58d5a17e10b51234e8ec.png',
-        'https://picui.cn/thumbnails/d525a8b821c06a84a491d19127dccc7e.png',
         'https://picui.cn/thumbnails/d525a8b821c06a84a491d19127dccc7e.png'
       ]
     }
