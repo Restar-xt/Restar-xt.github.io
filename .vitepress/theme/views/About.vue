@@ -11,7 +11,7 @@
       <!-- 追求 -->
       <div class="about-item pursuit">
         <span class="tip">致力</span>
-        <span class="title2">研究于</span>
+        <span class="title2">研究</span>
         <span class="title2">大视场光学系统架构</span>
         <span class="title2">全景环带凝视成像系统</span>
       </div>
@@ -44,8 +44,9 @@
           <i>無限進步</i>
         </span>
         <div class="list">
-          <span class="list-item" style="--color: #357ef5">ZZRVTC · 计算机应用技术</span>
-          <span class="list-item" style="--color: #eb372a">FE · 前端开发工程师</span>
+          <span class="list-item" style="--color: #357ef5">2025-2028(expected) · 浙江大学ZJU · 光电信息工程硕士</span>
+          <span class="list-item" style="--color: #eb372a">2021-2025 · 电子科技大学UESTC · 光电信息科学与工程学士</span>
+          <span class="list-item" style="--color: #eb372a">2022-2024 · 电子科技大学UESTC · 现代光电测控与仪器实验室MOMILE LAB · 研究学生</span>
         </div>
         <img
           class="career-img"
