@@ -66,7 +66,7 @@
           </a>
         </span>
         <img
-          src="https://free.picui.cn/free/2025/07/31/688ae3032dbc3.png"
+          src="https://picui.cn/thumbnails/8393d6fa277a7d625a9b29b3faad6b6d.png"
           alt="male"
           class="male"
         />
