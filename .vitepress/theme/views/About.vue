@@ -5,15 +5,15 @@
       <!-- 介绍 -->
       <div class="about-item hello">
         <span class="text1">你好，很高兴认识你👋</span>
-        <span class="text2 title2">我是 無名</span>
-        <span class="text3">是一名 前端开发工程师、独立开发者、博主</span>
+        <span class="text2 title2">我是 张笑通</span>
+        <span class="text3">是浙江大学在读硕士生</span>
       </div>
       <!-- 追求 -->
       <div class="about-item pursuit">
-        <span class="tip">追求</span>
-        <span class="title2">源于</span>
-        <span class="title2">热爱而去开发</span>
-        <span class="title2">优秀的作品</span>
+        <span class="tip">致力</span>
+        <span class="title2">研究于</span>
+        <span class="title2">大视场光学系统架构</span>
+        <span class="title2">全景环带凝视成像系统</span>
       </div>
     </div>
     <div class="about-content" style="grid-template-columns: 2fr 3fr">
