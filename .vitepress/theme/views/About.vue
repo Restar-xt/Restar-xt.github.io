@@ -76,12 +76,6 @@
         <span class="tip">目标</span>
         <span class="title1" style="margin-top: 20px">Chasing the Light，</span>
         <span class="title2">and Control it。</span>
-        <!-- 新添加的图片 -->
-        <img
-          src="https://picui.cn/thumbnails/3613b7628dcb58d5a17e10b51234e8ec.png" 
-          alt="Laser"
-          class="motto-image"
-        />
       </div>
     </div>
     <div class="about-content" style="grid-template-columns: 1fr 1fr">
