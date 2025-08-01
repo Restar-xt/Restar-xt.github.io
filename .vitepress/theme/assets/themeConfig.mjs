@@ -152,11 +152,6 @@ export const themeConfig = {
           name: "主站",
           url: "/",
         },
-        {
-          icon: "/images/logo/logo.webp",
-          name: "博客镜像站",
-          url: "https://blog-backup.imsyy.top/",
-        },
       ],
     },
     {
@@ -165,17 +160,12 @@ export const themeConfig = {
         {
           icon: "https://pic.efefee.cn/uploads/2024/04/08/6613465358077.png",
           name: "起始页",
-          url: "https://nav.xiaotong.blog/",
+          url: "https://nav.ximsyy.top/",
         },
         {
           icon: "https://pic.efefee.cn/uploads/2024/04/08/661346d418ad7.png",
           name: "今日热榜",
-          url: "https://hot.xiaotong.blog/",
-        },
-        {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",
-          name: "站点监测",
-          url: "https://status.xiaotong.blog/",
+          url: "https://hot.imsyy.top/",
         },
       ],
     },
