@@ -158,12 +158,12 @@ export const themeConfig = {
       name: "服务",
       list: [
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/6613465358077.png",
-          name: "起始页",
+          icon: "/images/logo/logo.webp",
+          name: "搜索引擎",
           url: "https://nav.ximsyy.top/",
         },
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/661346d418ad7.png",
+          icon: "/images/logo/logo.webp",
           name: "今日热榜",
           url: "https://hot.imsyy.top/",
         },
