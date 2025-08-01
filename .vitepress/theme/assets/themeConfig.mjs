@@ -165,17 +165,17 @@ export const themeConfig = {
         {
           icon: "https://pic.efefee.cn/uploads/2024/04/08/6613465358077.png",
           name: "起始页",
-          url: "https://nav.imsyy.top/",
+          url: "https://nav.xiaotong.blog/",
         },
         {
           icon: "https://pic.efefee.cn/uploads/2024/04/08/661346d418ad7.png",
           name: "今日热榜",
-          url: "https://hot.imsyy.top/",
+          url: "https://hot.xiaotong.blog/",
         },
         {
           icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",
           name: "站点监测",
-          url: "https://status.imsyy.top/",
+          url: "https://status.xiaotong.blog/",
         },
       ],
     },
