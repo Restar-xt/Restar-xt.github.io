@@ -159,7 +159,7 @@ export const themeConfig = {
       list: [
         {
           icon: "/images/logo/logo.webp",
-          name: "搜索引擎",
+          name: "起始页",
           url: "https://nav.ximsyy.top/",
         },
         {
