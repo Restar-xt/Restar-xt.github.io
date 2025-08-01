@@ -9,7 +9,7 @@ export const themeConfig = {
     // 站点logo
     logo: "/images/logo/logo.webp",
     // 站点地址
-    site: "https://xiaotong.blog",
+    site: "https://blog.imsyy.top",
     // 语言
     lang: "zh-CN",
     // 作者
@@ -152,20 +152,30 @@ export const themeConfig = {
           name: "主站",
           url: "/",
         },
+        {
+          icon: "/images/logo/logo.webp",
+          name: "博客镜像站",
+          url: "https://blog-backup.imsyy.top/",
+        },
       ],
     },
     {
       name: "服务",
       list: [
         {
-          icon: "/images/logo/logo.webp",
+          icon: "https://pic.efefee.cn/uploads/2024/04/08/6613465358077.png",
           name: "起始页",
-          url: "https://nav.ximsyy.top/",
+          url: "https://nav.imsyy.top/",
         },
         {
-          icon: "/images/logo/logo.webp",
+          icon: "https://pic.efefee.cn/uploads/2024/04/08/661346d418ad7.png",
           name: "今日热榜",
           url: "https://hot.imsyy.top/",
+        },
+        {
+          icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",
+          name: "站点监测",
+          url: "https://status.imsyy.top/",
         },
       ],
     },
@@ -178,9 +188,29 @@ export const themeConfig = {
           url: "https://github.com/imsyy/vitepress-theme-curve",
         },
         {
+          icon: "https://pic.efefee.cn/uploads/2024/04/07/66124f5fc63c8.png",
+          name: "SPlayer",
+          url: "https://github.com/imsyy/SPlayer",
+        },
+        {
+          icon: "https://pic.efefee.cn/uploads/2024/04/08/6613465358077.png",
+          name: "Snavigation",
+          url: "https://github.com/imsyy/SPlayer",
+        },
+        {
           icon: "/images/logo/logo.webp",
-          name: "Optical Design(Stay tuned)",
-          url: "https://xiaotong.blog/",
+          name: "Home",
+          url: "https://github.com/imsyy/home",
+        },
+        {
+          icon: "https://pic.efefee.cn/uploads/2024/04/08/661346d418ad7.png",
+          name: "DailyHotApi",
+          url: "https://github.com/imsyy/DailyHotApi",
+        },
+        {
+          icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",
+          name: "site-status",
+          url: "https://github.com/imsyy/site-status",
         },
       ],
     },
@@ -229,7 +259,10 @@ export const themeConfig = {
       {
         text: "项目",
         items: [
-          { text: "Home", link: "https://xiaotong.blog/", newTab: true },
+          { text: "Home", link: "https://github.com/imsyy/home/", newTab: true },
+          { text: "SPlayer", link: "https://github.com/imsyy/SPlayer/", newTab: true },
+          { text: "DailyHotApi", link: "https://github.com/imsyy/DailyHotApi/", newTab: true },
+          { text: "Snavigation", link: "https://github.com/imsyy/Snavigation/", newTab: true },
         ],
       },
       {
@@ -252,7 +285,14 @@ export const themeConfig = {
       {
         text: "服务",
         items: [
+          { text: "站点状态", link: "https://status.imsyy.top/", newTab: true },
           { text: "一个导航", link: "https://nav.imsyy.top/", newTab: true },
+          { text: "站点订阅", link: "https://blog.imsyy.top/rss.xml", newTab: true },
+          {
+            text: "反馈投诉",
+            link: "https://eqnxweimkr5.feishu.cn/share/base/form/shrcnCXCPmxCKKJYI3RKUfefJre",
+            newTab: true,
+          },
         ],
       },
     ],
@@ -340,7 +380,14 @@ export const themeConfig = {
     appId: "",
     apiKey: "",
   },
- 
+  // 打赏
+  rewardData: {
+    enable: true,
+    // 微信二维码
+    wechat: "https://pic.efefee.cn/uploads/2024/04/07/66121049d1e80.webp",
+    // 支付宝二维码
+    alipay: "https://pic.efefee.cn/uploads/2024/04/07/661206631d3b5.webp",
+  },
   // 图片灯箱
   fancybox: {
     enable: true,
