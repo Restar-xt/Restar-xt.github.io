@@ -17,7 +17,7 @@ const linkData = [
     typeList: [
       {
         name: "zxt's blog",
-        avatar: "https://pic.efefee.cn/uploads/2024/02/02/65bc526a940e3.png",
+        avatar: "/images/logo/logo.webp",
         desc: "Chasing the Light and Control it",
         url: "https://xiaotong.blog/",
       },
