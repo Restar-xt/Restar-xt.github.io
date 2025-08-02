@@ -288,8 +288,8 @@ export const themeConfig = {
     // 站点简介
     hello: {
       enable: true,
-      text: "这里有关于<strong>光学设计</strong>相关的问题和看法，也会有一些<strong>论文研究方法</strong>的分享，其中大部分内容会侧重于全景环带成像
-        。希望你可以在这里找到对你有用的知识和教程。",
+      text: "这里有关于<strong>光学设计</strong>相关的问题和看法，也会有一些<strong>论文研究方法</strong>的分享，其中大部分内容会侧重于<strong>全景环带成像
+        </strong>。希望你可以在这里找到对你有用的知识和教程。"
     },
     // 目录
     toc: {
@@ -343,14 +343,6 @@ export const themeConfig = {
     enable: false,
     appId: "",
     apiKey: "",
-  },
-  // 打赏
-  rewardData: {
-    enable: true,
-    // 微信二维码
-    wechat: "https://pic.efefee.cn/uploads/2024/04/07/66121049d1e80.webp",
-    // 支付宝二维码
-    alipay: "https://pic.efefee.cn/uploads/2024/04/07/661206631d3b5.webp",
   },
   // 图片灯箱
   fancybox: {
