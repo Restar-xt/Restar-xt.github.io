@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>zxt's blog</title>
+        <link>https://xiaotong.blog</link>
+        <description>Hello World</description>
+        <lastBuildDate>Sat, 02 Aug 2025 14:50:19 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>xiaotong zhang</generator>
+        <language>zh</language>
+        <copyright>Copyright © 2020-present xiaotong zhang</copyright>
+        <item>
+            <title><![CDATA[光学系统设计第一章-高斯光学]]></title>
+            <link>https://xiaotong.blog/posts/2025/光学系统设计第一章-高斯光学</link>
+            <guid>https://xiaotong.blog/posts/2025/光学系统设计第一章-高斯光学</guid>
+            <pubDate>Thu, 31 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考浙江大学-李晓彤老师-光学系统设计课程]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (xiaotong zhang)</author>
+        </item>
+        <item>
+            <title><![CDATA[欢迎使用 Curve]]></title>
+            <link>https://xiaotong.blog/posts/2024/1010</link>
+            <guid>https://xiaotong.blog/posts/2024/1010</guid>
+            <pubDate>Thu, 10 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[欢迎使用 Curve 主题，这是你的第一篇文章]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (xiaotong zhang)</author>
+        </item>
+    </channel>
+</rss>
