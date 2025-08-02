@@ -176,13 +176,13 @@ const skillsData = [
   {
     name: "Ansys Zemax OpticStudio",
     color: "#31A8FF",
-    icon: "opt-icon-线稿+原色_ANSYS",
+    icon: "https://picui.cn/thumbnails/07bbb1f37f0bb872f96e2355b90a1bda.png",
     link: "https://www.adobe.com/cn/lead/creativecloud/business.html",
   },
   {
     name: "Matlab",
     color: "#4AA181",
-    icon: "opt-icon-线稿+原色_MATLAB",
+    icon: "https://picui.cn/thumbnails/4af97c23baf34c9fc089b000e0588354.png",
     link: "https://chat.openai.com/",
   },
 ];
