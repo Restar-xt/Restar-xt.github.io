@@ -95,3 +95,48 @@ In order to develop a theory of aberrations it is necessary to **build a concept
 ### 英文术语
 
 - the field of view(Fov) 视场
+
+## The aperture stop, the pupils, and the field stop 孔径光阑、出入瞳、视场光阑
+
+###  aperture stop 孔径光阑
+>This aperture limits the amount of light through an optical system and creates a well-defined beam that reaches the image plane for every field point. The aperture stop is assumed to be circular, contained in a plane perpendicular to the optical axis and centered in the optical axis.
+
+孔径光阑主要用于限制通过光学系统的进光量，并为每个场点创建限制完备的抵达像平面的光束，通常位于垂直于光轴的平面内，并以光轴为中心。
+![A singlet lens system focusing rays arriving from two field points. The aperture stop limits the amount of light and defines the beams of light, and the field stop limits the field of view at an image location.](https://picui.cn/thumbnails/72faf0d87df30b595a262a5a01b5cd02.png)
+
+### field stop 视场光阑
+> The field stop is a limiting aperture located at an image plane that defines the extent of the field of view of the optical system. It contributes to well define how light propagates in an optical system by blocking unwanted light. Without the stop and field apertures an optical system is not well defined.
+
+视场光阑是位于像平面上的一个限制孔径，定义了光学系统的视场范围，有助于定义光是如何通过光学系统进行传播，并阻止不需要的光。该光阑的作用是将光场限制在一个校正良好的或非渐晕的区域内。
+
+### entrance pupil and exit pupil 入瞳与出瞳
+> The image of the aperture stop in object space is defined as the entrance pupil, and the image of the stop in image space is defined as the exit pupil. 
+
+将孔径光阑在物方空间的像定义为入瞳，将孔径光阑在像方空间的像定义为出瞳。
+
+> The aperture stop, the entrance pupil, and the exit pupil are optically conjugated, meaning that they are images of each other. The location of the aperture stop may depend on the application of the optical system. Sometimes the system is required to be telecentric in image or object space, and to achieve this condition the stop aperture must be located at the front or rear focal point of the system. In some systems the position of the stop is a degree of freedom that impacts aberrations.
+
+光阑、入瞳和出瞳是光学共轭的，意味着它们是彼此的像。光阑的位置可能取决于光学系统的应用。有时要求系统在像空间或物空间中远心，而要达到这一条件，光阑必须位于系统的前或后焦点处。在某些系统中，光阑的位置是影响像差的一个自由度。
+
+## Significant planes and rays 重要平面与光线
+
+### meridional plane 子午面
+> In analogy with the earth meridians, any plane in an optical system that contains the optical axis is called a meridional plane.
+
+类比地球子午线，光学系统中包含光轴的任意平面称为子午面
+
+![The chief ray passes through the center of the aperture stop and through the edge of the image. The marginal ray passes through the edge of the stop and through the center of the image.](https://picui.cn/thumbnails/3de80a75d38a8df7acea1ba34c6fd27d.png)
+
+上图为一个单透镜系统的子午面截图
+
+### marginal ray
+>The marginal ray starts at the axial object position, goes through the edge of the entrance pupil, and defines image locations and pupil sizes. It propagates to the edge of the stop and the edge of the exit pupil. The marginal ray height and ray angle are denoted by $y$ and $u$.
+
+边缘光线从轴上物点位置开始，穿过入瞳边缘，并定义图像位置和入瞳大小。它传播到停止的边缘和出口光瞳的边缘。边缘射线高度和射线角度分别用$y$和$u$表示。
+
+![边缘光线主光线示意图](https://picui.cn/thumbnails/e5d67ab8e1ed92d288625f552574ef29.png)
+
+> The chief ray starts at the edge of the object, goes through the center of the entrance pupil, and defines image heights and pupil locations. It goes through the center of the stop and the center of the exit pupil. The chief ray height and ray angle are denoted by and $\overline{y}$ and $\overline{u}$
+
+主光线起始于物体边缘，经过入瞳中心，定义了图像高度和入瞳位置。它经过孔径光阑中心和出瞳中心。主光线高度和光线角度分别用$\overline{y}$和$\overline{u}$表示。
+![边缘光线主光线示意图](https://picui.cn/thumbnails/e5d67ab8e1ed92d288625f552574ef29.png)
