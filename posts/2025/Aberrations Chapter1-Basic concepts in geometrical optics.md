@@ -3,8 +3,8 @@ title: Aberrations Chapter1-Basic concepts in geometrical optics
 tags: [Aberrations]
 categories: [光学设计基础]
 date: 2025-8-6
-description: 本笔记参考 $\text{Jos\'{e}\ Sasi\'{a}n}$的《Introduction to aberrations in optical imaging systems》
-articleGPT: 这是Introduction to aberrations in optical imaging systems的Basic concepts in geometrical optics一节笔记，主要介绍几何光学中的一些基础概念，例如光线、光路、波前、物像空间、光阑等等
+description: 本笔记参考《Introduction to aberrations in optical imaging systems》
+articleGPT: 这是Introduction to aberrations in optical imaging systems的Basic concepts in geometrical optics一节笔记，主要介绍几何光学中的一些基础概念，例如光线、光路、波前、物像空间、光阑等等，是研究像差的理论基础
 references:
   - title: Introduction to aberrations in optical imaging systems     $\text{Jos\'{e}\ Sasi\'{a}n}$
   - url: https://www.cambridge.org/core/books/introduction-to-aberrations-in-optical-imaging-systems/4541B166F94266355F024514C7185216
@@ -28,8 +28,8 @@ references:
 
 ## 研究方法-建立光传播经过光学系统形成图像的模型
 
-In order to develop a theory of aberrations it is necessary to **build a conceptual structure, a model, about how light propagates in an optical system and forms images.** For this we have the object and image spaces. In **<font color='yellow'>object space</font>** there is a **<font color='yellow'>coordinate system</font>**
- with the z-axis coinciding with the **<font color='yellow'>optical axis</font>**, the **<font color='yellow'>object plane</font>**, the **<font color='yellow'>entrance pupil</font>**, and the **<font color='yellow'>field vector</font>**. In **<font color='yellow'>image space</font>** there is also a coordinate system, the **<font color='yellow'>image plane</font>**, the **<font color='yellow'> exit pupil</font>**, and the **<font color='yellow'>aperture vector</font>**. We now assume that the optical system has **<font color='yellow'>axial symmetry</font>**; this simplifies the mathematical description and permits finding specific system attributes that are symmetry dependent. Two **<font color='yellow'>first-order rays</font>**, the **<font color='yellow'>chief and marginal rays</font>**, are traced. And, notably, from the tracing of these two rays a significant amount of information about an optical system can be extracted with minimum computational effort.
+In order to develop a theory of aberrations it is necessary to **build a conceptual structure, a model, about how light propagates in an optical system and forms images.** For this we have the object and image spaces. In **<font color='red'>object space</font>** there is a **<font color='red'>coordinate system</font>**
+ with the z-axis coinciding with the **<font color='red'>optical axis</font>**, the **<font color='red'>object plane</font>**, the **<font color='red'>entrance pupil</font>**, and the **<font color='red'>field vector</font>**. In **<font color='red'>image space</font>** there is also a coordinate system, the **<font color='red'>image plane</font>**, the **<font color='red'> exit pupil</font>**, and the **<font color='red'>aperture vector</font>**. We now assume that the optical system has **<font color='red'>axial symmetry</font>**; this simplifies the mathematical description and permits finding specific system attributes that are symmetry dependent. Two **<font color='red'>first-order rays</font>**, the **<font color='red'>chief and marginal rays</font>**, are traced. And, notably, from the tracing of these two rays a significant amount of information about an optical system can be extracted with minimum computational effort.
 
 ### 英文术语
 
