@@ -140,3 +140,47 @@ In order to develop a theory of aberrations it is necessary to **build a concept
 
 主光线起始于物体边缘，经过入瞳中心，定义了图像高度和入瞳位置。它经过孔径光阑中心和出瞳中心。主光线高度和光线角度分别用$\overline{y}$和$\overline{u}$表示。
 ![边缘光线主光线示意图](https://picui.cn/thumbnails/e5d67ab8e1ed92d288625f552574ef29.png)
+
+## field and aperture 场和孔径矢量
+
+> A propagating ray is uniquely defined by the field vector $\overrightarrow{H}$ and by the aperture vector $\overrightarrow{\rho}$. The field vector lies in the object plane and the aperture vector lies in the exit pupil plane as shown in Figure 2.7. These planes are perpendicular to the optical axis of the system. The field vector specifies the field point $\overline{y_{o}}\overrightarrow{H}$ from  which a ray originates. The point $y_{E}'\overrightarrow{\rho}$ defines the intersection of the ray with the exit pupil plane as shown also in Figure 2.7. Both vectors are normalized by the maximum aperture and maximum field respectively so that their magnitude ranges between zero and unity.
+
+**一条光线可以由场矢量和孔径矢量唯一确定表示。**
+
+![The aperture vector (scaled by the marginal ray height at the exit pupil) and the field vector (scaled by the chief ray height at the object plane).](https://picui.cn/thumbnails/383940a397cf5e0ed79aff2b52db13a6.png)
+
+### field vector 场矢量
+
+位于物面，物面垂直于系统光轴，场矢量指明了光线是从哪个场点发出的，并由最大场高$\overline{y_{o}}$进行归一化，使得其大小介于0与单位长度之间，场矢量用$\overrightarrow{H}$表示，其大小为$H$。
+
+最大场高$\overline{y_{o}}$是指主光线在物面的投射高度。
+![边缘光线主光线示意图](https://picui.cn/thumbnails/e5d67ab8e1ed92d288625f552574ef29.png)
+
+### aperture vector 孔径矢量
+
+位于系统出瞳面，出瞳面同样垂直于系统光轴，孔径矢量指明了光线到达出瞳面哪一点，并由最大孔径进行归一化，使得其大小介于0与单位长度之间，孔径矢量用$\overrightarrow{\rho}$表示，其大小为$\rho$。
+
+最大孔径高度$y_{E}'$是边缘光线在出瞳面的投射高度。
+![边缘光线主光线示意图](https://picui.cn/thumbnails/e5d67ab8e1ed92d288625f552574ef29.png)
+
+>Using the field and aperture vectors we can define fans of rays in a meridional plane by setting the field vector H and the aperture vector ρ parallel to each other (φ = 0). We can define sagittal rays by setting the vectors perpendicularly to each other (φ = 90◦).
+
+利用场矢量和孔径矢量，我们可以通过设置场矢量$\overrightarrow{H}$和孔径矢量$\overrightarrow{\rho}$相互平行( $\phi=0°$ )来定义子午面内的光束。我们可以通过设置相互垂直的向量( $\phi = 90 °$)来定弧矢面光束。
+
+![The angle φ between the field and aperture vectors looking down the optical axis.](https://picui.cn/thumbnails/f75dc74f0c0c8ab86c7b299dc1270a55.png)
+
+## Real, first-order, and paraxial rays
+
+### First-order optics 一阶光学
+> First-order optics is the study of perfect optical systems, or optical systems without aberrations. Analysis methods include **Gaussian optics** and **paraxial optics**. Results of these analyses include the imaging properties (image location and magnification) and the radiometric properties of the system.
+
+一阶光学的研究对象是理想光学系统，即没有像差的光学系统。对一阶光学的分析方法有两种，一种为Gussian optics 高斯光学，另一种为paraxial optics 傍轴光学。对一阶光学的分析结果通常包含系统的成像特性，例如图像位置、图像放大倍数等。
+
+### ray tracing 光线追迹
+> Rays of light are traced through an optical system in an iterative manner. The initial data are the spatial coordinates of a point and the direction of the ray. The ray is traced by finding its intersection coordinates with the next surface. Then the direction of the ray after refraction is determined by applying Snell’s law. For spherical surfaces or conic surfaces the ray intersection is determined using closed-form equations. For other surfaces an iterative algorithm is used until the intersection point is found to a high degree of accuracy. This ray-tracing process is repeated until the image plane is reached.
+
+光线以迭代的方式通过光学系统进行跟踪。初始数据是一个点的空间坐标和光线的传播方向。通过寻找光线与下一个曲面的交点坐标来追踪光线。然后应用斯涅耳定律确定光线折射后的方向。对于球面或圆锥曲线曲面，曲面方程已知，光线与曲面的交点用封闭形式的方程（将光线参数带入面型方程直接求得精确解）来确定。对于其他曲面，无法给出精确方程，只能使用迭代算法，直到找到交点具有高度的精度（计算误差然后减小误差，一直迭代，一般使用数值逼近方法）。这个光线跟踪过程重复进行，直到到达像平面。
+
+### real rays 实际光线
+对于实际光线的追踪则需要应用原本的斯涅尔定律，实现精确的追踪，光线可能不靠近光轴，斯涅尔定律（折反射定律）如下：
+$$n\sin I =n' \sin I'$$
