@@ -1,1 +1,102 @@
+---
+title: 光学系统设计第二章-初级像差理论
+tags: [Zemax]
+categories: [光学设计基础]
+date: 2025-7-31
+description: 本笔记参考浙江大学-李晓彤老师-光学系统设计课程
+articleGPT: 这是光学系统设计第二章笔记，章目的是利用哈密顿表述，导出旋转对称光学系统的像差表达式。理解初级像差的概念、现象、与孔径视场的关系。
+references:
+  - title: 浙江大学光学系统设计 李晓彤老师 2025春夏学期
+  - url: https://classroom.zju.edu.cn/livingroom?course_id=72005&sub_id=1539825&tenant_code=112
+   
+---
 
+
+# 光学系统设计第二章 初级像差理论
+
+> **参考书目：**  
+> 《工程光学》（第4版）                 &ensp;      郁道银 谈恒英  
+> 《几何光学·像差·光学设计》（第5版）         &ensp;&ensp;&ensp;&ensp; 李晓彤 岑兆丰
+>
+> **参考视频：**\
+> 学在浙大-智云学堂-李晓彤老师《光学系统设计》 2024-2025-2 工程师学院
+>
+> **课程概述：**\
+> 主要围绕原理、设计要求与设计方法。主要包括绪论、高斯光学、初级像差理论、光学系统结构设计、光学系统质量评价、光学系统中的特殊面形或元件、特殊光学系统设计。
+
+## 初级像差的表达式
+
+### 如何确定一条光线？
+
+旋转对称系统的哈密顿量
+$$H=-\sqrt{n^{2}(u,z)-v}$$
+其中：
+$$u=x^{2}+y^{2}$$
+$$v=p^{2}+q^{2}$$
+
+规定大写表示实际光线，小写表示近轴光线
+$$H=-\sqrt{n^{2}(U,z)-V}$$
+
+>由于旋转对称性，可以先研究关于$x$与$p$的方程，同理可得$y$与$q$的方程。
+>$$
+\because
+\left\{
+\begin{array}{l}
+\begin{aligned}
+\frac{\partial u}{\partial x}=2x\\
+\frac{\partial v}{\partial p}=2p
+\end{aligned}
+\end{array}
+\right.
+>$$
+>$$
+\therefore
+\left\{
+\begin{array}{l}
+\begin{aligned}
+\frac{\partial }{\partial x}=2x\frac{\partial}{\partial u}\\
+\space \\
+\frac{\partial }{\partial p}=2p\frac{\partial}{\partial p}
+\end{aligned}
+\end{array}
+\right.
+>$$
+>由前一节的哈密顿方程得到的结论：
+>$$
+\left\{
+\begin{array}{l}
+\begin{aligned}
+\frac{\partial H}{\partial p} &= \dot{x} \\
+\frac{\partial H}{\partial q} &= \dot{y} \\
+\frac{\partial H}{\partial x} &= -\dot{p} \\
+\frac{\partial H}{\partial y} &= -\dot{q} \\
+\frac{\partial H}{\partial z} &= -\frac{\partial L}{\partial z}
+\end{aligned}
+\end{array}
+\right.
+>$$
+>则可得到：
+>$$\dot{x}=\frac{\partial H}{\partial p}=2p\frac{\partial H}{\partial v}=2pH_{2}$$
+>$$\dot{p}=-\frac{\partial H}{\partial x}=-2x\frac{\partial H}{\partial u}=-2xH_{1}$$
+
+$$\frac{\mathrm{d}X}{\mathrm{d}z}=2p\frac{\mathrm{d}H}{\mathrm{d}V}$$
+$$\frac{\mathrm{d}P}{\mathrm{d}z}=-2X\frac{\mathrm{d}H}{\mathrm{d}U}$$
+
+
+回顾第一章的光学余弦（广义光学动量），光学余弦$p$与$q$即是折射率乘方向余弦，指明了光线的方向。若是确定光线初始的位置，即可确定一条光线；另外通过光线在两个平面的位置坐标，结合光沿直线传播即可确定一条光线。
+
+综上，有**两种方式**唯一确定一条光线。
+
+- **某平面上的$X$，$Y$，$P$，$Q$值（一个点位置+方向）**
+- **两个平面上的$X$，$Y$值（两个点位置确定）**
+
+### 研究物面到瞳面的光线
+
+|  | 物平面 | 入瞳面 |
+|---------|---------|---------|
+| 平面位置 | $z=z_{0}$ | $z=\zeta$ |
+| 光线表示 | $X(z_{0})=x_{0}$<br>$Y(z_{0})=y_{0}$ | $X(\zeta)=\xi$<br>$Y(\zeta)=\eta$ |
+
+则光线传播到任意位置时的$X$，$Y$，$P$，$Q$均是关于$x_{0}$，$y_{0}$，$\xi$，$\eta$的函数。对于任意光线，将$X$，$Y$，$P$，$Q$级数展开，仍以$X$，$P$为例：
+$$X=X_{1}+X_{2}+X_{3}+\dots$$
+$$P=P_{1}+P_{2}+P_{3}+\dots$$
