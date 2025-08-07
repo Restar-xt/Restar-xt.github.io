@@ -184,3 +184,13 @@ In order to develop a theory of aberrations it is necessary to **build a concept
 ### real rays 实际光线
 对于实际光线的追踪则需要应用原本的斯涅尔定律，实现精确的追踪，光线可能不靠近光轴，斯涅尔定律（折反射定律）如下：
 $$n\sin I =n' \sin I'$$
+
+### first-order rays 一阶光线
+
+一阶光线指的是对光线的一阶近似，故而使用的斯涅尔方程也是一阶线性近似：
+$$n i = n' i'$$
+
+### paraxial rays 傍轴光线
+> By paraxial rays we mean rays extremely close to the optical axis that are also traced with the first-order ray equations. However, each paraxial ray height and slope is assumed to be multiplied by a small factor such as $10^{-25}$ to insure that the ray is very close to the optical axis. In actual calculations there is cancelation of these factors and the factors are not explicitly written down.
+
+其实就是离光轴非常近的光线，也可以用一阶光线所对应的公式进行计算。
