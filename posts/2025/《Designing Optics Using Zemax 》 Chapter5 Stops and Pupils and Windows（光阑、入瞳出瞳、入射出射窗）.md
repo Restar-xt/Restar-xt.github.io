@@ -1,5 +1,5 @@
 ---
-title: 《Designing Optics Using Zemax》 Ch5 Stops、Pupils and Windows
+title: Designing Optics Using Zemax Chapter5 Stops&Pupils&Windows
 tags: [Zemax]
 categories: [光设软件基础-Zemax]
 date: 2025-8-13
