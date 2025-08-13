@@ -57,7 +57,7 @@ references:
 
 ### 输入镜头数据 Lens Data
 
-[![chapter5LDE数据.png](https://free.picui.cn/free/2025/08/13/689c4675b4d16.png)](https://free.picui.cn/free/2025/08/13/689c4675b4d16.png)
+[![LDE数据.png](https://free.picui.cn/free/2025/08/13/689c4675b4d16.png)](https://free.picui.cn/free/2025/08/13/689c4675b4d16.png)
 
 ### 查看切面图 Layout 
 [![Layout.png](https://free.picui.cn/free/2025/08/13/689c4b5c03677.png)](https://free.picui.cn/free/2025/08/13/689c4b5c03677.png)
@@ -76,10 +76,11 @@ references:
 [![Setup-Editors-Field Data Editor](https://free.picui.cn/free/2025/08/13/689c603205008.png)](https://free.picui.cn/free/2025/08/13/689c603205008.png)
 
 FDE操作和LDE（镜头数据编辑器）操作相同，insert插入行，delete删除列，按照三点法以及原始设置的镜头数据，在FDE内依次输入$Y$坐标，大小分别为0，14（取0.7即可），20。FDE右侧即为视场点图像。
-[![屏幕截图 2025-08-13 180512.png](https://free.picui.cn/free/2025/08/13/689c635c60cde.png)](https://free.picui.cn/free/2025/08/13/689c635c60cde.png)
+
+[![Field Data Editor](https://free.picui.cn/free/2025/08/13/689c635c60cde.png)](https://free.picui.cn/free/2025/08/13/689c635c60cde.png)
 
 设置完成后打开Layout查看截面图：
-[![Layout3.png](https://free.picui.cn/free/2025/08/13/689c6aa1d9bc9.png)](https://free.picui.cn/free/2025/08/13/689c6aa1d9bc9.png)
+[![Layout](https://free.picui.cn/free/2025/08/13/689c6aa1d9bc9.png)](https://free.picui.cn/free/2025/08/13/689c6aa1d9bc9.png)
 
 可以明显发现，**离轴点离轴程度越高，成像质量越差，体现在像面弥散斑越大**。
 
