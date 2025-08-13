@@ -85,4 +85,7 @@ FDE操作和LDE（镜头数据编辑器）操作相同，insert插入行，delet
 可以明显发现，**离轴点离轴程度越高，成像质量越差，体现在像面弥散斑越大**。
 
 可以使用3D视图查看3D图像，**Setup>System Viewers>3D Viewer**
+
 [![3DLayout.png](https://free.picui.cn/free/2025/08/13/689c6db46a6dc.png)](https://free.picui.cn/free/2025/08/13/689c6db46a6dc.png)
+
+test
