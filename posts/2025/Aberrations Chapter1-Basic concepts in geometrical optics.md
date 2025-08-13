@@ -1,7 +1,7 @@
 ---
 title: Aberrations Chapter1-Basic concepts in geometrical optics
 tags: [Aberrations]
-categories: [光学设计基础]
+categories: [光设理论基础]
 date: 2025-8-6
 description: 本笔记参考《Introduction to aberrations in optical imaging systems》
 articleGPT: 这是Introduction to aberrations in optical imaging systems的Basic concepts in geometrical optics一节笔记，主要介绍几何光学中的一些基础概念，例如光线、光路、波前、物像空间、光阑等等，是研究像差的理论基础
