@@ -3,7 +3,7 @@ title: 《Designing Optics Using Zemax》 Chapter5 Stops and Pupils and Windows
 tags: [Zemax]
 categories: [光学设计软件基础-Zemax]
 date: 2025-8-13
-description: 本笔记参考 Donald O’Shea and Julie Bentley的《Designing Optics Using Zemax》一书，主要讲述光学设计基础知识和Zemax的使用，该书从第5章开始系统按照光阑、像差、像质评价等顺序并结合Zemax进行说明，系统介绍了Zemax的各种功能与操作。
+description: 本笔记参考 Donald O’Shea and Julie Bentley的《Designing Optics Using Zemax》一书。
 articleGPT: 在将镜头输入 OpticStudio® 后通过近轴像面厚度求解确定轴上物点的像平面位置后，需进一步评估该镜头离轴物点的成像表现。首先在物平面选取少量代表扩展物体的视场点，随后引入孔径光阑、视场光阑、入/出瞳及入/出窗等核心概念以分析光线在系统中的传播路径。这些定义看似繁琐，但需明确：镜头的本质功能是实现物体至像面的辐射能传输。若成像亮度不足或物体未能完整成像，即使轴上分辨率表现再佳，该设计仍为失败。初学者首次接触光学系统的光瞳与光阑概念时往往感到困惑——此亦本章标题的由来。本章目标在于清晰阐释光阑、光瞳及视场窗等概念原理，使学习者能在光学系统构建与评估中游刃有余地运用这些核心要素。
 references:
   - title: 《Designing Optics Using Zemax OpticStudio》
