@@ -112,3 +112,150 @@ FDE操作和LDE（镜头数据编辑器）操作相同，insert插入行，delet
 ### Skew Rays 斜射线 
 
 子午光线因其传播路径限定于一个平面内，且该平面必须同时包含物点与光轴，故呈现出独特的性质。然而绝大多数由物点发出的光线并不满足此约束条件，此类光线被定义为空间光线。以上图所示弧矢光束为例，除中心光线外，其余光线皆属斜光线——该中心光线因其所在平面同时贯穿物点与光轴，其性质正符合子午光线的定义。
+
+### Axis Rays 轴向光线
+
+从轴上点发出的一束轴向光线。需要在3D Layout Settings>Ray Pattern改为Ring，即环形模式。
+
+[![Axis Rays.png](https://free.picui.cn/free/2025/08/14/689d2dadcacfc.png)](https://free.picui.cn/free/2025/08/14/689d2dadcacfc.png)
+
+
+### Rays for objects at infinity 无限远处物体发出的光线
+
+在等凸透镜的上述示例中，我们采用有限物距的物体阐释了光学设计中的视场与特征光线路径。当物体位于无穷远时，其高度将趋近无限大（例如：**一与光轴夹角为7°的物点，在10¹³ mm物距条件下高度将达1.2187×10¹² mm**）。对于无穷远物距场景，宜采用光线与光轴的夹角（而非物高）表征物点位置。在OpticStudio软件中，可通过视场数据编辑器（Field Data Editor，FDE）将视场类型由"**Object Height**"切换为"**Angle**"实现该设定。
+
+在物距有限远的条件下，对于离轴性能分析，我们可以在离轴处增加物方点进行分析，使用**三点法**进行分析；同样地，在物距无限远的条件下，对于离轴性能分析，可以在物方**增加多个视场角**进行分析。
+
+本文中的诸多设计示例采用无穷远物体，并应用一组标准角度（0°、7°、10°）。鉴于此类角度指光轴与来自物点光线之间的夹角，故视场角表征为透镜角度覆盖范围的一半。因此，全角度覆盖范围达20°。
+
+[![选择角度.png](https://free.picui.cn/free/2025/08/14/689d5290b9064.png)](https://free.picui.cn/free/2025/08/14/689d5290b9064.png)
+
+[![Angle-YFan.png](https://free.picui.cn/free/2025/08/14/689d53876990b.png)](https://free.picui.cn/free/2025/08/14/689d53876990b.png)
+
+[![Angle-XFan.png](https://free.picui.cn/free/2025/08/14/689d53874da46.png)](https://free.picui.cn/free/2025/08/14/689d53874da46.png)
+
+[![Angle-XYFan.png](https://free.picui.cn/free/2025/08/14/689d538771b70.png)](https://free.picui.cn/free/2025/08/14/689d538771b70.png)
+
+
+## The Aperture Stop and Marginal Rays 孔径光阑与边缘光线
+
+在光学系统的设计和优化中，最有用的概念之一是孔径光阑的大小和位置。**孔径光阑是透镜组件中用以限制轴上光束尺寸的开孔。改变光阑的大小和位置往往可以极大地改善透镜的性能。** 
+
+**然而，当孔径光阑发生改变时，系统中其他孔径的尺寸必须相应调整，以确保新的孔径光阑
+能够有效控制轴向光线束的传输范围。**
+
+### Zemax输入镜头参数
+
+- Entrance Pupil Diameter（入瞳直径）：$10mm$
+- Wavelength（工作波长）：$d-line$
+- Fields（视场）：$0°$
+
+上述操作类同前文，只需要修改部分数据即可。
+
+#### 输入镜头数据 Lens Data
+[![镜头数据.png](https://free.picui.cn/free/2025/08/14/689db6c5dfb6d.png)](https://free.picui.cn/free/2025/08/14/689db6c5dfb6d.png)
+
+#### 查看切面图 Layout 
+[![Layout2.png](https://free.picui.cn/free/2025/08/14/689dba3a68f7b.png)](https://free.picui.cn/free/2025/08/14/689dba3a68f7b.png)
+
+#### 查看一阶数据 First-order
+
+**Programming>MacroList**
+
+```
+File: asdoubletAxis.zmx
+Title: 
+Date: 2025/8/14
+
+Infinite Conjugates
+ Effective Focal Length       49.6049
+ Back Focal Length       19.1683
+ Front Focal Length       -9.1683
+ F/#        4.9605
+ Image Distance       19.1683
+ Lens Length       58.0000
+ Paraxial Image
+ Height        0.0000
+ Angle        0.0000
+ Entrance Pupil
+ Diameter       10.0000
+ Location       40.4366
+ Exit Pupil
+ Diameter       10.0000
+ Thickness      -30.4366
+
+Object space positions are measured with respect to the first surface vertex
+Image space positions are measured with respect to the last surface vertex
+```
+
+### 结论
+
+> For the given EPD of 10 mm, the program automatically calculates the size (semi-aperture) of the stop surface needed to pass all of the rays from an axial object point. This semi-aperture or Clear Semi-Diameter (CSD) is listed in the LDE under the Clear Semi-Dia column as 3.516. Therefore, the stop surface’s circular aperture is 7.032 mm in diameter
+
+对于给定的10 mm入瞳直径（EPD），该程序自动计算出需要通过所有轴上物点光线的光阑面尺寸（半孔径）。该净半口径（CSD）数值3.516已列于镜头数据编辑器（LDE）的"净半口径"栏中，因此相应光阑面的圆形孔径直径为7.032 mm。
+
+- EPD (Entrance Pupil Diameter)：入瞳直径
+- Clear Semi-Diameter (CSD)：净半口径（表征实际通光范围）/净口径
+- stop surface：光阑面（核心光学元件）
+
+### 改变数据观察结果
+
+> Change the entrance pupil diameter of the OSasdoubletAxis to 20 mm and determine the diameter of the aperture stop that is needed to pass all rays from an axial object point using the LDE. When you finish this exercise, change the EPD back to 10 mm before you continue the narrative in the text.
+
+将入瞳直径由10mm更改为20mm，观察光阑面尺寸大小。
+[![更改入瞳直径为20mm后的LDE数据.png](https://free.picui.cn/free/2025/08/14/689dc24f4174c.png)](https://free.picui.cn/free/2025/08/14/689dc24f4174c.png)
+
+可见光阑面CSD尺寸为7.005mm，则光阑直径应为14.01mm。
+
+### 设置余量
+
+OpticStudio会计算每个视场点所有光线通过各镜面所需的净口径（CSD），并将其列于镜头数据编辑器（LDE）的Clear SemiDiameter栏中。横截面示意图中，透镜表面随即根据这些尺寸绘制边界。如下图所示的空气间隔双胶合透镜，其光线示意图被绘制至镜片表面的**理论极限边缘**。
+
+然而**在实际制造过程中，透镜的加工直径通常需大于光线追迹确定的净口径尺寸**。**该设计冗余旨在为清边区域外的表面保留额外空间：用于容纳抛光不均匀缺陷（通常称为"塌边"），为镀膜夹具提供操作区域，并为透镜组装的安装区域预留空间**。基于此工程考量，可通过**适当增大透镜直径的方式优化绘图效果，使其更符合实际生产情形**。
+
+**可以在System Explorer > Aperture > Clear Semi Diameter Margin %进行余量设置。**
+
+
+#### 数据对比
+
+[![原数据.png](https://free.picui.cn/free/2025/08/14/689dcf9dd7503.png)](https://free.picui.cn/free/2025/08/14/689dcf9dd7503.png)
+
+[![更改净口径余量后的数据.png](https://free.picui.cn/free/2025/08/14/689dc24f4174c.png)](https://free.picui.cn/free/2025/08/14/689dc24f4174c.png)
+
+**设置余量后发现光阑的净口径和像面的净口径都不变。**
+
+>在光学设计中，光阑（Stop）和像面（Image Surface）的 **CSD（Clear Semi Diameter）** 不需要增加余量的原因如下：
+>### 📌 1. **光阑的功能特性**  
+>  - **核心作用**：光阑是约束系统光束孔径（而非机械孔径）的关键元件，其大小需严格匹配目标F/#和视场角计算出的 **入瞳/出瞳尺寸（Entrance/Exit Pupil）**。  
+> - **影响直接性**：增大光阑的CSD会导致无效光线进入系统（超出理论孔径），破坏像差控制逻辑并产生杂散光。  
+> - **设计原则**：光阑尺寸在光学设计初期即被确定，必须严格保持其理论值 ⚠️。
+>### 📐 2. **像面的物理约束**  
+ >  - **匹配探测器**：像面CSD必须等于或略大于 **探测器靶面尺寸**，过大的CSD会导致：  
+     - 错误模拟实际成像区域（有效光线可能被裁剪或干扰杂光分析）  
+     - 影响公差分析和工艺装配的准确性  
+>   - **公差处理**：探测器装配偏移的容差通常在独立公差模块（如Zemax的Tolerance）中设置，而非通过增大CSD实现。
+>### 🛠 3. **透镜CSD余量的意义**  
+>   - **机械安全区**：对折射/反射镜增加CSD余量（如10%）是为了预留：  
+     - 镜片安装公差（偏心、倾斜）  
+     - 温度形变缓冲空间  
+     - 镀膜/抛光工艺的边缘裕度  
+>   - **光能/像质无关**：此操作不影响光线追迹模型，仅保证透镜机械边缘**不遮挡设计孔径内的有效光线**。
+
+---
+
+> ### 📚 **操作逻辑总结**  
+>| **元件类型** | **CSD调整需求** | **原因** |  
+>|--------------|----------------|----------|  
+>| 透镜表面     | **需增加余量** | 预留机械公差与热膨胀空间 |  
+>| 光阑         | **禁止改动**   | 维持系统理论孔径角不变 |  
+>| 像面         | **禁止改动**   | 匹配探测器实际尺寸 |  
+
+---
+
+>✅ 结论：光阑和像面的CSD不可增加余量是出于**光学功能的核心约束**——前者控制光束传播路径，后者对接物理探测器。而透镜CSD增加余量仅解决**机械可靠性问题**，不影响光学模型的准确性。
+
+#### 切面图对比
+
+[![原切面图.png](https://free.picui.cn/free/2025/08/14/689dcfd3dd35c.png)](https://free.picui.cn/free/2025/08/14/689dcfd3dd35c.png)
+
+[![更改净口径余量后的切面图.png](https://free.picui.cn/free/2025/08/14/689dcfd3c294c.png)](https://free.picui.cn/free/2025/08/14/689dcfd3c294c.png)
