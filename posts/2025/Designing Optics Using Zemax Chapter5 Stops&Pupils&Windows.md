@@ -220,7 +220,7 @@ OpticStudio会计算每个视场点所有光线通过各镜面所需的净口径
 
 [![原数据.png](https://free.picui.cn/free/2025/08/14/689dcf9dd7503.png)](https://free.picui.cn/free/2025/08/14/689dcf9dd7503.png)
 
-[![更改净口径余量后的数据.png](https://free.picui.cn/free/2025/08/14/689dc24f4174c.png)](https://free.picui.cn/free/2025/08/14/689dc24f4174c.png)
+[![更改净口径余量后的数据.png](https://free.picui.cn/free/2025/08/14/689dd4e641765.png)](https://free.picui.cn/free/2025/08/14/689dd4e641765.png)
 
 **设置余量后发现光阑的净口径和像面的净口径都不变。**
 
