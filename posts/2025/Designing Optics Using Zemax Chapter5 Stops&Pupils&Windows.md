@@ -3,7 +3,7 @@ title: Designing Optics Using Zemax Chapter5 Stops&Pupils&Windows
 tags: [Zemax]
 categories: [光设软件基础-Zemax]
 date: 2025-8-13
-description: 本笔记参考 《Designing Optics Using Zemax》。
+description: 本笔记参考 《Designing Optics Using Zemax》
 articleGPT: 在将镜头输入 OpticStudio® 后通过近轴像面厚度求解确定轴上物点的像平面位置后，需进一步评估该镜头离轴物点的成像表现。首先在物平面选取少量代表扩展物体的视场点，随后引入孔径光阑、视场光阑、入/出瞳及入/出窗等核心概念以分析光线在系统中的传播路径。这些定义看似繁琐，但需明确：镜头的本质功能是实现物体至像面的辐射能传输。若成像亮度不足或物体未能完整成像，即使轴上分辨率表现再佳，该设计仍为失败。初学者首次接触光学系统的光瞳与光阑概念时往往感到困惑——此亦本章标题的由来。本章目标在于清晰阐释光阑、光瞳及视场窗等概念原理，使学习者能在光学系统构建与评估中游刃有余地运用这些核心要素。
 references:
   - title: 《Designing Optics Using Zemax OpticStudio》
@@ -136,7 +136,6 @@ FDE操作和LDE（镜头数据编辑器）操作相同，insert插入行，delet
 
 [![Angle-XYFan.png](https://free.picui.cn/free/2025/08/14/689d538771b70.png)](https://free.picui.cn/free/2025/08/14/689d538771b70.png)
 
-
 ## The Aperture Stop and Marginal Rays 孔径光阑与边缘光线
 
 在光学系统的设计和优化中，最有用的概念之一是孔径光阑的大小和位置。**孔径光阑是透镜组件中用以限制轴上光束尺寸的开孔。改变光阑的大小和位置往往可以极大地改善透镜的性能。** 
@@ -188,7 +187,7 @@ Object space positions are measured with respect to the first surface vertex
 Image space positions are measured with respect to the last surface vertex
 ```
 
-### 结论
+### 光阑尺寸自动计算
 
 > For the given EPD of 10 mm, the program automatically calculates the size (semi-aperture) of the stop surface needed to pass all of the rays from an axial object point. This semi-aperture or Clear Semi-Diameter (CSD) is listed in the LDE under the Clear Semi-Dia column as 3.516. Therefore, the stop surface’s circular aperture is 7.032 mm in diameter
 
@@ -198,7 +197,7 @@ Image space positions are measured with respect to the last surface vertex
 - Clear Semi-Diameter (CSD)：净半口径（表征实际通光范围）/净口径
 - stop surface：光阑面（核心光学元件）
 
-### 改变数据观察结果
+### 改变入瞳直径观察结果
 
 > Change the entrance pupil diameter of the OSasdoubletAxis to 20 mm and determine the diameter of the aperture stop that is needed to pass all rays from an axial object point using the LDE. When you finish this exercise, change the EPD back to 10 mm before you continue the narrative in the text.
 
@@ -207,7 +206,7 @@ Image space positions are measured with respect to the last surface vertex
 
 可见光阑面CSD尺寸为7.005mm，则光阑直径应为14.01mm。
 
-### 设置余量
+### 设置净口径余量
 
 OpticStudio会计算每个视场点所有光线通过各镜面所需的净口径（CSD），并将其列于镜头数据编辑器（LDE）的Clear SemiDiameter栏中。横截面示意图中，透镜表面随即根据这些尺寸绘制边界。如下图所示的空气间隔双胶合透镜，其光线示意图被绘制至镜片表面的**理论极限边缘**。
 
@@ -220,7 +219,7 @@ OpticStudio会计算每个视场点所有光线通过各镜面所需的净口径
 
 [![原数据.png](https://free.picui.cn/free/2025/08/14/689dcf9dd7503.png)](https://free.picui.cn/free/2025/08/14/689dcf9dd7503.png)
 
-[![更改净口径余量后的数据.png](https://free.picui.cn/free/2025/08/14/689dd4e641765.png)](https://free.picui.cn/free/2025/08/14/689dd4e641765.png)
+[![更改净口径余量后的数据.png](https://free.picui.cn/free/2025/08/14/689dc24f4174c.png)](https://free.picui.cn/free/2025/08/14/689dc24f4174c.png)
 
 **设置余量后发现光阑的净口径和像面的净口径都不变。**
 
@@ -258,4 +257,128 @@ OpticStudio会计算每个视场点所有光线通过各镜面所需的净口径
 
 [![原切面图.png](https://free.picui.cn/free/2025/08/14/689dcfd3dd35c.png)](https://free.picui.cn/free/2025/08/14/689dcfd3dd35c.png)
 
+[![更改净口径余量后的切面图.png](https://free.picui.cn/free/2025/08/14/689dcfd3c294c.png)](https://free.picui.cn/free/2025/08/14/689dcfd3c294c.png)
+
+### 增加离轴场点
+
+在System Explore>Fields>Field Data Editor中添加两个离轴场点，分别为7°、10°。并在切面图中的settings中将绘制光线数量调整为3。这三条光线分别为：一条经过光阑中心的主光线，两条经过光阑边缘的边缘光线。切面图如下图所示：
+
+[![增加离轴物点后的切面图.png](https://free.picui.cn/free/2025/08/15/689e95e624260.png)](https://free.picui.cn/free/2025/08/15/689e95e624260.png)
+
+从上图也可以明显看出，增加离轴场点以后，透镜口径自动增大，以保证离轴场点光线通过。原因是：点击表面S2对应CSD列"11.234"数值旁的方框，将弹出"Clear Semi-Doameter solve on surface2"下拉菜单，其"solve type"显示为"Automatic"。这表明S2的通光孔径已实现自动计算。
+
+### Pupil Aberrations 光瞳像差
+
+#### 现象
+
+孔径光阑（也称为光圈或光圈孔径）是光学透镜系统中的关键部件，它就像一个“门”，专门限制来自轴上视场（optical axis，即系统中心轴）的光线输入量。在理想情况下：
+
+- 如果没有其他遮挡物（如额外的光圈或物理障碍），孔径光阑不仅能限制轴上光线，还应限制来自离轴视场点（off-axis field points，即远离系统中心的点）的光线。
+- 离轴光线也应完全“填充”光阑表面，即光线均匀通过开孔区域，形成光斑。
+这类似于一个房间的门：当人站在门正前方（轴上），只能部分通过；当人站在角落（离轴），也应该能部分通过门洞。理论上，所有光线都该顺畅地穿过这扇门。
+
+然而放大光阑处的图像：
+
+[![放大后光阑处的图像](https://free.picui.cn/free/2025/08/15/689e9da483ddc.png)](https://free.picui.cn/free/2025/08/15/689e9da483ddc.png)
+
+发现**离轴视场的边缘光线（marginal rays）无法完全填充光阑的下部**。这意味着光线分布不均匀——有些区域被遮挡而不通过，导致光能量损失或成像变形。原因在于像差（aberrations），特别是光瞳像差（pupil aberrations）：
+- 像差是光学设计缺陷，使光线传播发生扭曲（比如因透镜形状不完美）。
+- 光瞳像差是一种高级像差类型，指孔径光阑的“像”（image of the stop）在物方空间（object space，即物体侧）中变得异常：或严重变形（aberrated）、或位置偏移（shifted）、或角度倾斜（tilted）。
+
+本例的描述表明，光学系统中的透镜设计导致光阑图像失真，从而使离轴光线不能充分覆盖整个开孔区。这是一个复杂话题，需要深入研究镜头设计，初学者可先理解为“扭曲的镜子导致光线路径混乱”。简单比喻：就像门本身的影子被扭曲了，角落的人无法顺利找到入口
+
+#### 软件解决方案
+
+当前，OpticStudio 采用名为光线瞄准（ray aiming）的算法修正此类偏差。
+
+该算法通过精确计算物方空间中各视场点对应特定孔径光阑尺寸的光线路径，确保光阑表面被正确填充。一般而言，当物方空间所观测的光瞳像出现明显偏差、位置偏移或角度倾斜时，需启用光线瞄准功能。考虑到计算效率优化，系统初始设置中默认关闭此功能，以优先确保光线追迹效率。
+
+光线瞄准功能可以在**System Explorer > Ray Aiming**中打开，从下拉菜单中选择"Paraxial"。Ray Aiming开启和关闭对比如下：
+
+[![Ray Aiming Paraxial.png](https://free.picui.cn/free/2025/08/15/689ea2fd5db6d.png)](https://free.picui.cn/free/2025/08/15/689ea2fd5db6d.png)
+
+[![Ray Aiming Off.png](https://free.picui.cn/free/2025/08/15/689ea2fd5d88e.png)](https://free.picui.cn/free/2025/08/15/689ea2fd5d88e.png)
+
+打开光线瞄准后的镜头数据如下：
+[![镜头数据](https://free.picui.cn/free/2025/08/15/689ead1d23ff6.png)](https://free.picui.cn/free/2025/08/15/689ead1d23ff6.png)
+
+### 改变系统孔径光阑
+
+**surface4为光阑面**的透镜原数据如下：
+
+[![surface4为光阑面](https://free.picui.cn/free/2025/08/15/689ead1d23ff6.png)](https://free.picui.cn/free/2025/08/15/689ead1d23ff6.png)
+
+将**surface2改为光阑面**后的透镜数据如下：
+
+[![屏幕截图 2025-08-15 115205.png](https://free.picui.cn/free/2025/08/15/689eb1c1d2c0d.png)](https://free.picui.cn/free/2025/08/15/689eb1c1d2c0d.png)
+
+**S5与S6镜组的孔径增大**（旨在消除10°离轴光束在第二透镜处产生的剪裁效应），同时第一透镜处的光束尺寸相应缩小。
+
+[![surface2为光阑面时的切面图](https://free.picui.cn/free/2025/08/15/689ee03a0d2b1.png)](https://free.picui.cn/free/2025/08/15/689ee03a0d2b1.png)
+
+
+
+### 关于光阑的对称性设计
+
+上文中surface4处放置光阑具有对称性，这种对称性不仅能**优化透镜性能**，其**对称结构对制造与装配更具重要实践意义**。基于对称特征，该设计可采用两片直径相同的全同透镜实现制作，其优势如下：**仅需单一型号透镜元件，且系统中任意位置均可互换安装。**
+
+[![对称设计切面图](https://free.picui.cn/free/2025/08/15/689efd8f9d4f2.png)](https://free.picui.cn/free/2025/08/15/689efd8f9d4f2.png)
+
+## Chief Rays and Pupils of a Lens 主光线与透镜光瞳
+
+### Chief Rays 主光线
+
+> A chief ray is a ray that goes through the center of the aperture stop.
+
+**主光线是穿过孔径光阑中心的光线**。对于一个光学系统来说，有无数个场点，**每个场点都有一条经过光阑中心的主光线**。
+
+同样，每个场点都有自己的一组边缘光线，但是通常对于一个场点，总是由其通过光阑上边缘的一条边缘光线和一条主光线进行表征。在System Viewer>Cross-Section>settings中，勾选Marginal and Chief Only选项，得到的切面图如下：
+
+[![主光线和边缘光线.png](https://free.picui.cn/free/2025/08/15/689f1792aa329.png)](https://free.picui.cn/free/2025/08/15/689f1792aa329.png)
+
+
+### Entrance Pupil 入瞳
+
+> Question: 当光阑在第一个透镜表面时，进入光学系统入射光束的大小很容易确定。它等于第一个透镜表面的直径（孔径光阑直径）。但是**如果孔径光阑被设置在透镜内部，那么如何才能确定入射光束的大小？**
+尽管初看这似乎是一个无足轻重的问题，但**透镜可收集的光束截面尺寸直接决定了其在弱光环境、高速成像条件下的工作效能，以及其是否适用于高分辨率应用场景。评定透镜聚光能力的核心参数是其入瞳直径**。
+
+入瞳被定义为从物体空间看到的光阑的图像。（光阑通过位于光阑之前的光学系统所成的像）。
+
+- 当光阑位于透镜前表面时，前表面即为入瞳，前表面直径即为入瞳直径。
+- 当光阑在系统内部时，光阑变成被成像的物体，经过光阑前面的光学元件成像在物空间，利用光学基本定律即可求出光阑的像，从而得知入瞳的位置与大小。
+
+入瞳的重要性在于其作为限制入射光量的关键孔径。当轴上物点发出的锥状光束充满入瞳时，经物像共轭原理可见该光束将在孔径光阑处实现完全填充。**入瞳决定了光学系统可收集并汇聚至像平面的光通量极限。**
+
+删除上文中LDE中的偏移面，运行FIRST宏，结果如下：
+```
+File: asdoubletSym.zmx
+Title: 
+Date: 2025/8/15
+
+Infinite Conjugates
+ Effective Focal Length       49.6049
+ Back Focal Length       19.1683
+ Front Focal Length      -19.1683
+ F/#        4.9605
+ Image Distance       19.1683
+ Lens Length       48.0000
+ Paraxial Image
+ Height        8.7467
+ Angle       10.0000
+ Entrance Pupil
+ Diameter       10.0000
+ Location       30.4366
+ Exit Pupil
+ Diameter       10.0000
+ Thickness      -30.4366
+
+Object space positions are measured with respect to the first surface vertex
+Image space positions are measured with respect to the last surface vertex
+```
+
+### Exit Pupil 出瞳
+
+出瞳被定义为从像空间看到的光阑的图像。（光阑通过位于光阑之后的光学系统所成的像）。在此不再赘述。
+
+## The Field Stop and Its Windows 视场光阑及其窗口
 [![更改净口径余量后的切面图.png](https://free.picui.cn/free/2025/08/14/689dcfd3c294c.png)](https://free.picui.cn/free/2025/08/14/689dcfd3c294c.png)
