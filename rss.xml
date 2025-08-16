@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Restar_xt's blog</title>
+        <link>https://xiaotong.blog</link>
+        <description>Chasing the light and control it</description>
+        <lastBuildDate>Sat, 16 Aug 2025 15:28:57 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Restar_xt</generator>
+        <language>zh</language>
+        <copyright>Copyright © 2020-present Restar_xt</copyright>
+        <item>
+            <title><![CDATA[Designing Optics Using Zemax Chapter5 Stops&Pupils&Windows]]></title>
+            <link>https://xiaotong.blog/posts/2025/Designing Optics Using Zemax Chapter5 Stops&amp;Pupils&amp;Windows</link>
+            <guid>https://xiaotong.blog/posts/2025/Designing Optics Using Zemax Chapter5 Stops&amp;Pupils&amp;Windows</guid>
+            <pubDate>Wed, 13 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 《Designing Optics Using Zemax》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[光学系统设计第二章②-初级像差及其光束结构]]></title>
+            <link>https://xiaotong.blog/posts/2025/光学系统设计第二章②初级像差及其光束结构</link>
+            <guid>https://xiaotong.blog/posts/2025/光学系统设计第二章②初级像差及其光束结构</guid>
+            <pubDate>Tue, 12 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考浙江大学-李晓彤老师-光学系统设计课程]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[光学系统设计第二章①-初级像差理论]]></title>
+            <link>https://xiaotong.blog/posts/2025/光学系统设计第二章①-初级像差理论</link>
+            <guid>https://xiaotong.blog/posts/2025/光学系统设计第二章①-初级像差理论</guid>
+            <pubDate>Thu, 07 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考浙江大学-李晓彤老师-光学系统设计课程]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[Aberrations Chapter1-Basic concepts in geometrical optics]]></title>
+            <link>https://xiaotong.blog/posts/2025/Aberrations Chapter1-Basic concepts in geometrical optics</link>
+            <guid>https://xiaotong.blog/posts/2025/Aberrations Chapter1-Basic concepts in geometrical optics</guid>
+            <pubDate>Wed, 06 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考《Introduction to aberrations in optical imaging systems》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[光学系统设计第一章②-程函方程式、波动光学与几何光学的联系]]></title>
+            <link>https://xiaotong.blog/posts/2025/光学系统设计第一章②-程函方程式、波动光学与几何光学的联系</link>
+            <guid>https://xiaotong.blog/posts/2025/光学系统设计第一章②-程函方程式、波动光学与几何光学的联系</guid>
+            <pubDate>Tue, 05 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考浙江大学-李晓彤老师-光学系统设计课程]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[光学系统设计第一章①-费马原理三种表述与高斯光学]]></title>
+            <link>https://xiaotong.blog/posts/2025/光学系统设计第一章①-费马原理与高斯光学</link>
+            <guid>https://xiaotong.blog/posts/2025/光学系统设计第一章①-费马原理与高斯光学</guid>
+            <pubDate>Thu, 31 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考浙江大学-李晓彤老师-光学系统设计课程]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[欢迎使用 Curve]]></title>
+            <link>https://xiaotong.blog/posts/2024/1010</link>
+            <guid>https://xiaotong.blog/posts/2024/1010</guid>
+            <pubDate>Thu, 10 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[欢迎使用 Curve 主题，这是你的第一篇文章]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+    </channel>
+</rss>
