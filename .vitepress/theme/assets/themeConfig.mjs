@@ -3,9 +3,9 @@ export const themeConfig = {
   // 站点信息
   siteMeta: {
     // 站点标题
-    title: "zxt's blog",
+    title: "Restar_xt's blog",
     // 站点描述
-    description: "Hello World",
+    description: "Chasing the light and control it",
     // 站点logo
     logo: "/images/logo/logo.webp",
     // 站点地址
@@ -14,14 +14,14 @@ export const themeConfig = {
     lang: "zh-CN",
     // 作者
     author: {
-      name: "xiaotong zhang",
+      name: "Restar_xt",
       cover: "/images/logo/logo.webp",
       email: "xiaotongzhang.zxt@gmail.com",
       link: "https://www.xiaotong.blog",
     },
   },
   // 备案信息
-  icp: "光ICP备380780号",
+  icp: "None",
   // 建站日期
   since: "2025-07-31",
   // 每页文章数据
