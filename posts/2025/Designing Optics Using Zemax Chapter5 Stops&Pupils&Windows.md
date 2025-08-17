@@ -334,14 +334,15 @@ OpticStudio会计算每个视场点所有光线通过各镜面所需的净口径
 
 同样，每个场点都有自己的一组边缘光线，但是通常对于一个场点，**总是由其通过光阑上边缘的一条边缘光线和一条主光线进行表征。** 在**System Viewer>Cross-Section>settings**中，选择绘制光线数量为1，可得单个场点的主光线：
 
-[![单个场点主光线.png](https://free.picui.cn/free/2025/08/16/68a04341980e4.png)](https://free.picui.cn/free/2025/08/16/68a04341980e4.png)
+[![单个场点主光线](https://free.picui.cn/free/2025/08/17/68a1f08138847.png)](https://free.picui.cn/free/2025/08/17/68a1f08138847.png)
 
 选择绘制光线数量为2，可得单个场点的上下两条边缘光线：
 
-[![单个场点的两条边缘光线.png](https://free.picui.cn/free/2025/08/16/68a0434190120.png)](https://free.picui.cn/free/2025/08/16/68a0434190120.png)
+[![单个场点的两条边缘光线](https://free.picui.cn/free/2025/08/17/68a1f0813174f.png)](https://free.picui.cn/free/2025/08/17/68a1f0813174f.png)
 
 选择绘制光线数量为3，可得单个场点的主光线与上下两条边缘光线：
-[![单个场点的主光线与两条边缘光线.png](https://free.picui.cn/free/2025/08/16/68a0434190120.png)](https://free.picui.cn/free/2025/08/16/68a0434190120.png)
+
+[![单个场点的主光线与两条边缘光线](https://free.picui.cn/free/2025/08/17/68a1f081372d8.png)](https://free.picui.cn/free/2025/08/17/68a1f081372d8.png)
 
 
 
