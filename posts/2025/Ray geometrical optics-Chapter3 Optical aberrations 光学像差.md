@@ -12,6 +12,8 @@ references:
 ---
 
 
+
+
 # Ray geometrical optics-Chapter3 Optical aberrations 光学像差
 
 > **参考书目：**  
@@ -51,24 +53,8 @@ references:
 - 从**波的角度**分析：实际波前偏离高斯参考球面，则称该系统成像有像差。
 - 从**光线角度**分析：通过$P$传播至$P'$的光线光程不都相同，则称该系统成像有像差。
 
-在参考球面上某点处光线的**波像差**，**等于该光线对应的波前相对于高斯球面波前的光学偏差**。它反映了所考察光线与主光线从**点物传播至参考球面**过程中的**光程差**。而主光线对应的波像差恒为零，加之所有理想光线从参考球面到高斯像点的光程相等，因此，**任意光线的波像差亦可表述为：该光线从点物$P$到高斯像点$P'$的光程与主光线光程之差**。
+在参考球面上某点处光线的**波像差**，**等于该光线对应的波前相对于高斯球面波前的光程差**。它反映了所考察光线与主光线从**点物传播至参考球面**过程中的**光程差**。而主光线对应的波像差恒为零，加之所有理想光线从参考球面到高斯像点的光程相等，因此，**任意光线的波像差亦可表述为：该光线从点物$P$到高斯像点$P'$的光程与主光线光程之差**。更详细的表述是：实际光线从物点$P$传播到高斯参考球面$Q$点（**这一部分光线是真实的，即为实际光线的传播路径**）后，再由$Q$传播到高斯像点$P'$（**这一部分光线是虚拟的，实际光线并不会传播到高斯像点**）的光程和主光线光程之差。
 
-> 通俗解释：想象一个理想的光学系统（如透镜），它应能将点光源发出的光完美汇聚到一个点像上去。现实中，系统有缺陷，导致光波面不能形成完美球面。波像差就是这种“缺陷”的量化指标：它衡量了实际波前（wavefront）相对于理想球面波前的偏差。
-
-> 理解**任意光线的波像差亦可表述为：该光线从点物$P$到高斯像点$P'$的光程与主光线光程之差**：
-> 
-> [![轴上物点对应的波像差示意图](https://free.picui.cn/free/2025/09/03/68b7be45f0f8f.png)](https://free.picui.cn/free/2025/09/03/68b7be45f0f8f.png)
-> 
-> 从上图可以看出，严格根据波像差的定义来讲：某条光线在出瞳处的波像差即是其对应的实际波前与高斯参考球面之间的光程差，即$n_{i}\overline{Q} Q$
->
-> 考虑到$Q$点在高斯参考球面上，完善成像情况下，理想光线从$Q$点传播到高斯像点$P_{0}'$的光程差即是高斯参考球面的半径。注意观察上图，不论是高斯参考球面（理想波前，虚线绘制）还是实际波前（实线绘制），二者均经过点$o$，即出瞳中心（即主光线波像差为0的图示）。这说明，对于实际光线：
->
-> $$\text{从物点}P\text{传播到实际波前}\overline{Q}\text{的光程差}=\text{主光线}从P\text{传播到}O\text{的光程差}$$
->即 
-> $$opl(P\overline{Q})=opl({PO})$$
-> 此外，对于高斯参考球面而言，从实际波前$\overline{Q}$点对应的理想波前$Q$发出的并传播到高斯像点$P$的光线与主光线从$O$传播到高斯像点$P$的光程差相同。即:
-> $$opl(QP_{0}')=opl(OP_{0}')$$
-> 那么，对于从物点$P$发出的，经过$\overline{Q}$，到达高斯像点$P_{0}'$的光线对应的光程差和从物点$P$发出的，到达高斯像点$P_{0}'$的主光线光程差近似相差一个波像差$n_{i}\overline{Q}Q$。
 
 ### 轴上物点对应的波像差
 
@@ -111,6 +97,8 @@ references:
   
 将轴外物点位置假设在$x$轴上虽然很特殊，但是**考虑系统的旋转对称性**，这样特殊假设得出的结论是具有一般性的。
 
+[![坐标系](https://free.picui.cn/free/2025/09/04/68b94b3066fe9.png)](https://free.picui.cn/free/2025/09/04/68b94b3066fe9.png)
+
 ### 波像差与几何像差对比
 
 | 对比维度         | 波像差 (Wavefront Aberration)                          | 几何像差 (Geometrical Aberration)                       |
@@ -133,5 +121,124 @@ references:
 
 若考虑折射率分别为  $n$  和  $n'$  的两种介质中的点  $P$  和  $P'$ ，其三维位置矢量分别为  $\mathbf{r}$  和  $\mathbf{r}'$ ，则从  $P$  到  $P'$  的光线光程长度称为**哈密顿点特征函数**，可表示为  $V(P, P')$  或  $V(\mathbf{r}, \mathbf{r}')$ 。
 
-令  $\mathbf{\hat{u}}'$  为过  $P'$  的射线方向的单位矢量。如上图 所示，考察邻近点  $P''$ ，其位置矢量为  $\mathbf{r}' + \delta\mathbf{r}'$ （此处  $\delta\mathbf{r}'$  表示从  $P'$  指向  $P''$  的矢量  $\overrightarrow{P'P''}$ ）。沿光线路径  $PBP''$  的点特征函数可写作  $V(\mathbf{r}, \mathbf{r}' + \delta\mathbf{r}')$ 。若将  $V$  视为  $\mathbf{r}'$  的函数，则可表示为:
+令  $\mathbf{\hat{u}}'$  为过  $P'$  的射线方向的单位矢量，**显然物点$P$应该在该光线上的反向延长线上，即$P$与$P'$共线**。如上图所示，考察邻近点  $P''$ ，其位置矢量为  $\mathbf{r}' + \delta\mathbf{r}'$ （此处  $\delta\mathbf{r}'$  表示从  $P'$  指向  $P''$  的矢量  $\overrightarrow{P'P''}$ ）。沿光线路径  $PBP''$（仍为一条直线）  的点特征函数可写作  $V(\mathbf{r}, \mathbf{r}' + \delta\mathbf{r}')$ 。若将  $V$  视为  $\mathbf{r}'$  的函数，则可表示为:
+
+$$V(\mathbf{r},\mathbf{r'}+\delta{\mathbf{r'}})-V(\mathbf{r},\mathbf{r'})=\delta\mathbf{r'}\cdot \nabla'V$$
+
+其中，$\nabla'$是关于$\mathbf{r'}$的梯度算子。
+
+- **对于公式左侧**：考虑波前的定义，同一波前上的某点到物点的光程应相同，即:
+  $$opl(PB)=opl(PP')$$
+  $$opl(PBP'')=opl(PP'A)$$
+  那么则有：
+  $$opl(PBP'')-opl(PB)=opl(PP'A)-opl(PP')$$
+  即：
+  $$opl(BP'')=opl(P'A)$$
+  因此
+  $$\begin{aligned}
+    V(\mathbf{r},\mathbf{r'}+\delta{\mathbf{r'}})-V(\mathbf{r},\mathbf{r'}) &= opl(PBP'') - opl(PP') \\
+    &= opl(PP'A) - opl(PP') \\
+    &= opl(P'A) \\
+    &= opl(BP'')
+    \end{aligned}$$
+
+  而对于$P'A$，根据向量数量积的定义可知：
+  $$\overline{P'A}=\overrightarrow{P'P''}\cdot \mathbf{\hat{u}'}=\delta\mathbf{r'}\cdot \mathbf{\hat{u}}'$$
+
+  那么等式左侧即可写为：
+  $$opl(P'A)=n'\mathbf{\hat{u}'}\cdot \delta \mathbf{r'}$$
+
+- **对于公式右侧**：不需要进一步整理。
+  
+综上所述，即可得到：
+$$\boxed{n'\mathbf{\hat{u}'}\cdot \delta \mathbf{r'}=\delta\mathbf{r'}\cdot \nabla'V}$$
+
+化简即可得到：
+
+$$\boxed{n'\mathbf{\hat{u}'}= \nabla'V}$$
+
+上述公式的物理意义：**终点$P'$处的光线方向$\mathbf{\hat{u}'}$由哈密顿点特征函数对终点位置的梯度决定**。
+
+## 波像差和几何像差关系推导
+
+[![轴上物点对应的波像差示意图](https://free.picui.cn/free/2025/09/03/68b7be45f0f8f.png)](https://free.picui.cn/free/2025/09/03/68b7be45f0f8f.png)
+
+[![轴外物点对应的波像差示意图](https://free.picui.cn/free/2025/09/03/68b7be45ee7d8.png)](https://free.picui.cn/free/2025/09/03/68b7be45ee7d8.png)
+
+
+在上面两个图中，以实际光线$GR_{0}$或$GR$为例，该光线分别与波前及参考球面相交于点$\overline{Q}$和点$Q$。根据波前的定义，从物点出发终止于$\overline{Q}$的光线，其光程与终止于$O$点的主光线光程相等。因此，$n_{i}\overline{Q}Q$表征了所研究光线的波像差（如图所示，其数值为正）。设$W(x,y)$代表该波像差，其中$(x,y,z)$为点Q的空间坐标。由于点$Q$位于参考球面上，**其$z$坐标与$x$、$y$呈函数关系**，故无需显式考虑$W$对$z$的依存性。
+
+> **波像差的正负问题：**
+>
+> - 从光程角度入手：
+>   若实际光线传播到高斯参考球面的光程大于主光线传播到高斯参考球面的光程，则波像差为正，反之则否。
+> - 从几何上直观来看：
+>   若实际波前位于高斯参考球面（理想波前）左侧，波像差为正，反之则否。
+
+对于上图中的实际光线$GR_{0}$与$GR$对应的波像差，可以用哈密顿点特征函数表示：
+
+$$W(x,y)=V(P,Q)-V(P,\overline{Q})$$
+又因为，
+$$V(P,\overline{Q})=V(P,O)$$
+所以有：
+$$W(x,y)=V(P,Q)-V(P,O)$$
+上式对$x$求偏导可得：
+$$\frac{\partial W}{\partial x}=\frac{\partial V(P,Q)}{\partial x}-0=\frac{\partial V(P,Q)}{\partial x}$$
+考虑到，$z$是关于$x$,$y$的函数，那么上式可写为：
+$$\frac{\partial W}{\partial x}=\frac{\partial V}{\partial x}+\frac{\partial V}{\partial z}\frac{\partial z}{\partial x}$$
+
+[![坐标系](https://free.picui.cn/free/2025/09/04/68b94b3066fe9.png)](https://free.picui.cn/free/2025/09/04/68b94b3066fe9.png)
+
+利用公式：
+$$\boxed{n'\mathbf{\hat{u}'}= \nabla'V}$$
+考虑其物理意义：**终点$P'$处的光线方向$\mathbf{\hat{u}'}$由哈密顿点特征函数对终点位置的梯度决定**。
+
+将该公式应用至$QP''$段，则有：
+$$\bigg(\frac{\partial V}{\partial x},\frac{\partial V}{\partial y},\frac{\partial V}{\partial z}\bigg)=\frac{n_{i}}{R'}(x_{i}-x,y_{i}-y,z_{g}-z)$$
+其中，$R'$为$QP''$长度，$n_{i}$为其所在空间中的折射率。
+
+而，
+$$QP'=OP'=R$$
+则有：
+$$x_{g}^{2}+z_{g}^{2}=R^{2}$$
+$$(x-x_{g})^{2}+y^{2}+(z-z_{g})^{2}=R^{2}$$
+即：
+$$x_{g}^{2}+z_{g}^{2}=(x-x_{g})^{2}+y^{2}+(z-z_{g})^{2}$$
+化简可得：
+$$x^{2}+y^{2}+z^{2}-2xx_{g}-2zz_{g}=0$$
+上式对$x$求偏导即可得到：
+$$2x+2z\frac{\partial z}{\partial x}-2x_{g}-2z_{g}\frac{\partial z}{\partial x}=0$$
+即：
+$$\frac{\partial z}{\partial x}=-\frac{x-x_{g}}{z-z_{g}}$$
+
+综上，得到三个等式：
+$$\begin{cases}
+\dfrac{\partial W}{\partial x}=\dfrac{\partial V}{\partial x}+\dfrac{\partial V}{\partial z}\dfrac{\partial z}{\partial x}\\ 
+\space \\  
+\left( \dfrac{\partial V}{\partial x}, \dfrac{\partial V}{\partial y}, \dfrac{\partial V}{\partial z} \right) = \dfrac{n_{i}}{R'} \left( x_{i} - x, y_{i} - y, z_{g} - z \right) \\
+\space \\
+\dfrac{\partial z}{\partial x} = -\dfrac{x - x_{g}}{z - z_{g}}
+
+\end{cases}$$
+
+三式结合，最终可以得到:
+
+
+$$
+\begin{aligned}
+\frac{\partial W}{\partial x} &= \frac{n_{i}}{R'}(x_{i}-x) - \frac{n_{i}}{R'}(z_{g}-z) \cdot \frac{x - x_{g}}{z - z_{g}} \\
+&= \frac{n_{i}}{R'}(x_{i}-x_{g})
+\end{aligned}
+$$
+
+可改写为：
+$$\boxed{x_{i}-x_{g}=\frac{R'}{n_{i}}\frac{\partial W}{\partial x}}$$
+
+同理：
+$$\boxed{y_{i}=\frac{R'}{n_{i}}\frac{\partial W}{\partial y}}$$
+
+上述二式给出了参考球面上点$(x, y, z)$处的波像差 $W(x, y)$ 与高斯像平面中光线像差 $(x_i-x_g,y_i)$ 之间的精确关系。然而，这两个公式所含的距离 $R'$ 本身取决于点P′′的坐标 $(x_i, y_i)$ 。
+
+
+由于实际参考球面的曲率半径 $R$ 远大于光线分布范围，可将 $R'$ 替换为 $R$ ，并表述为：
 
