@@ -2,7 +2,7 @@
 title: Ray geometrical optics-Chapter3 Optical aberrations 光学像差
 tags: [Zemax]
 categories: [光设理论基础]
-date: 2025-9-3
+date: 2025-9-22
 description: 本笔记参考 《Optical imaging and aberrations part I. Ray geometrical optics》
 articleGPT: 这是Optical imaging and aberrations part I. Ray geometrical optics中第三章Optical aberrations的相关笔记，本章从波像差和几何像差的定义入手，点明波像差与几何像差之间的关系，明确从波像差中可以推导出几何像差这一重要结论。在此基础上，引入离焦波像差和波前倾斜两类因为观察角度或元件装配等问题产生的波像差。进一步地，讨论了关于其光轴旋转对称的成像系统可能存在的像差。将系统像差函数展开为物坐标与瞳坐标的幂级数，引入初级、二级、三级像差理论。该像差也可通过泽尼克圆（Zernike circle polynomials）多项式进行展开，并给出了两类展开系数之间的转换关系。文中简要讨论了初级像差的干涉图特征，以阐明实践中如何识别此类像差。最终通过论述系统在何种条件下可形成无像差完美成像来结束本章，重点推导了正弦条件：若满足该条件的离轴共轭点所在平面中，轴向共轭点已实现完美成像，则所有阶彗差均为零。
 references:
