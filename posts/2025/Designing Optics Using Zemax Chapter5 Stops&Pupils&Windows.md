@@ -1,5 +1,5 @@
 ---
-title: Designing Optics Using Zemax Chapter5 Stops&Pupils&Windows
+title: Designing Optics Using Zemax Chapter5 Stops&Pupils&Windows 光阑+光瞳+出入射窗
 tags: [Zemax]
 categories: [光设软件基础-Zemax]
 date: 2025-8-18
