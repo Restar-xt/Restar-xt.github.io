@@ -1,5 +1,5 @@
 ---
-title: Designing Optics Using Zemax Chapter6 Spherical Aberration（球差）
+title: Designing Optics Using Zemax Chapter6 Spherical Aberration  （球差）
 tags: [Zemax]
 categories: [光设软件基础-Zemax]
 date: 2025-9-23
