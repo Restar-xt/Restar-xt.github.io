@@ -12,8 +12,6 @@ references:
 ---
 
 
-
-
 # 《Designing Optics Using Zemax 》 Chapter7 Coma and Astigmatism（彗差与像散）
 
 > **参考书目：**  
@@ -35,8 +33,9 @@ references:
 | --------------- | ------------------- | -------------------------- |
 | Spherical       | $\rho^4$            | $\rho^3$                   |
 | Coma            | $h \rho^3$          | $h \rho^2$                 |
-| Astigmatism     | $h^2 \rho^2$        | $h^2 \rho$                 |
-| Field curvature | $h^2 \rho^2$        | $h^2 \rho$                 |
+| Astigmatism(tangential)     | $h^2 \rho_{y}^2$        | $h^2 \rho_{y}$                 |
+| Astigmatism(sagittal)     | $h^2 \rho_{x}^2$        | $h^2 \rho_{x}$                 |
+|Petzval curvature | $h^2 \rho^2$        | $h^2 \rho$                 |
 | Distortion      | $h^3 \rho$          | $h^3$                      |
 
 # Coma 彗差
@@ -61,7 +60,7 @@ $$\text{Coma}\propto \rho^{2}h$$
 
 [![0°点列图.png](https://free.picui.cn/free/2025/09/24/68d343d5db313.png)](https://free.picui.cn/free/2025/09/24/68d343d5db313.png)
 
--**7°**
+- **7°**
 
 [![7°点列图.png](https://free.picui.cn/free/2025/09/24/68d343d595c0f.png)](https://free.picui.cn/free/2025/09/24/68d343d595c0f.png)
 
@@ -275,7 +274,98 @@ TOT   -0.4053   0.1563  -0.2845  -0.1036  -0.2459  -0.5304  -0.0105   0.0000   0
 比较彗差TTCO，反转结构明显减小。
 
 
-## Aplanatic Lenses 消色差透镜
+## Aplanatic Lenses 消球差透镜
+
+### Zemax基本参数
+
+- 孔径设置 aperture： 入瞳直径EPD 10mm
+- 波长设置 wavelength：d-line 0.5876$\mu m$
+- 视场设置 field：angle 类型 0°、7°、10°
+
+### 镜头数据
+
+[![消球差镜头的数据](https://free.picui.cn/free/2025/09/29/68da264b7abdd.png)](https://free.picui.cn/free/2025/09/29/68da264b7abdd.png)
+
+注意一个操作点，即镜头材料material的输入。此处不再指定某种材料，而是点击Material一栏右侧的空格（类似用边缘高度计算厚度），solve type选择Model，输入折射率与阿贝数。
+
+### 切面图
+
+[![消球差透镜切面图.png](https://free.picui.cn/free/2025/09/29/68da294bf0867.png)](https://free.picui.cn/free/2025/09/29/68da294bf0867.png)
+
+### 横向光线像差曲线与点列图
+
+- **0°**
+
+|[![屏幕截图 2025-09-29 144150.png](https://free.picui.cn/free/2025/09/29/68da2aeccc981.png)](https://free.picui.cn/free/2025/09/29/68da2aeccc981.png)|[![屏幕截图 2025-09-29 144419.png](https://free.picui.cn/free/2025/09/29/68da2aed22e93.png)](https://free.picui.cn/free/2025/09/29/68da2aed22e93.png)|
+|:--:|:--:|
+| 横向光线像差曲线 | 点列图 |
+
+- **7°**
+
+|[![屏幕截图 2025-09-29 144158.png](https://free.picui.cn/free/2025/09/29/68da2aed60c9b.png)](https://free.picui.cn/free/2025/09/29/68da2aed60c9b.png)|[![屏幕截图 2025-09-29 144427.png](https://free.picui.cn/free/2025/09/29/68da2aeced80e.png)](https://free.picui.cn/free/2025/09/29/68da2aeced80e.png)|
+|:--:|:--:|
+| 横向光线像差曲线 | 点列图 |
+
+- **10°**
+
+|[![屏幕截图 2025-09-29 144207.png](https://free.picui.cn/free/2025/09/29/68da2aed32c65.png)](https://free.picui.cn/free/2025/09/29/68da2aed32c65.png)|[![屏幕截图 2025-09-29 144439.png](https://free.picui.cn/free/2025/09/29/68da2aeebaab9.png)](https://free.picui.cn/free/2025/09/29/68da2aeebaab9.png)
+|:--:|:--:|
+| 横向光线像差曲线 | 点列图 |
+
+### THIRD.zpl运行结果
+
+```
+THIRD
+Primary Wavelength: 0.5876 um
+Surf TSPH TTCO TAST TPFC TSFC TTFC TDIS TAXC TLAC
+STO   -0.0261  -0.0829  -0.0585  -0.0445  -0.0738  -0.1323  -0.0781  -0.0000  -0.0000
+  2   -1.8408   1.3211  -0.2107  -0.0908  -0.1961  -0.4068   0.0469  -0.0000  -0.0000
+  3    1.9213  -1.3899   0.2234   0.0994   0.2112   0.4346  -0.0509  -0.0000  -0.0000
+  4   -0.0502   0.1544  -0.1055  -0.0202  -0.0729  -0.1784   0.0747  -0.0000  -0.0000
+IMA   -0.0000  -0.0000  -0.0000  -0.0000  -0.0000  -0.0000  -0.0000  -0.0000  -0.0000
+TOT    0.0041   0.0027  -0.1512  -0.0561  -0.1317  -0.2829  -0.0073   0.0000   0.0000
+
+```
+
+尽管该消球差透镜在轴上的成像几乎完美，其彗差也趋于零，但两轴外视场点的光斑尺寸仍表现极差。从上图的点列图可见，消球差透镜远非理想透镜设计的终点。在7°与10°视场处，光斑范围显著大于轴上光斑，且呈现明显的非对称性——子午方向的光斑宽度明显大于弧矢方向。这种非对称特征同时体现在各视场点的子午与弧矢横向光迹曲线斜率差异上。
+
+## Astigmatism 像散
+
+| Aberration      | Wave Aberration ($W$) | Transverse Aberration ($\nabla W$) |
+| --------------- | ------------------- | -------------------------- |
+| Spherical       | $\rho^4$            | $\rho^3$                   |
+| Coma            | $h \rho^3$          | $h \rho^2$                 |
+| Astigmatism(tangential)     | $h^2 \rho_{y}^2$        | $h^2 \rho_{y}$                 |
+| Astigmatism(sagittal)     | $h^2 \rho_{x}^2$        | $h^2 \rho_{x}$                 |
+|Petzval curvature | $h^2 \rho^2$        | $h^2 \rho$                 |
+| Distortion      | $h^3 \rho$          | $h^3$                      |
+
+从上表不难看出：
+$$\text{Astigmatism}\propto h^{2}\rho$$
+
+描述像散误差时，两个入射光瞳位置尤为重要：一个位于$y-z$ 平面（子午面），另一个与之正交地位于 $x-z$ 平面（弧矢面）。若用蓝色光线绘制通过消球差镜的子午面（$y-z$ 平面）光线扇，同时用红色光线绘制与之垂直的弧矢面（$x-z$ 平面）光线扇，可观察到两个光线扇沿主光线聚焦于不同位置。该透镜中，子午光线聚焦点比弧矢光线聚焦点更靠近透镜。
+
+[![像散示意图](https://free.picui.cn/free/2025/09/29/68da3416622c0.png)](https://free.picui.cn/free/2025/09/29/68da3416622c0.png)
+
+
+从横向光线像差曲线上来看，若评价平面位于近轴像面处，当且仅当曲线与$x$轴重合，表明此时光线束汇聚到近轴像点上一点，即实现理想成像。以消球差透镜为例。其7°、10°的横向光线像差曲线中，无论子午面还是弧矢面，其曲线均与$x$轴有夹角，这就说明，光线束中的不同光线在近轴像面处并不相交于一点，这点从切面图上也可以看到，其子午面和弧矢面光线束均在近轴像面前的地方汇聚。
+
+[![消球差透镜切面图.png](https://free.picui.cn/free/2025/09/29/68da294bf0867.png)](https://free.picui.cn/free/2025/09/29/68da294bf0867.png)
+
+可以使用**optimize>slider**进行观察。现在像面前插入一个离焦面即S5，在slider进行如下设置：
+
+[![Slider](https://free.picui.cn/free/2025/09/29/68da391f4b808.png)](https://free.picui.cn/free/2025/09/29/68da391f4b808.png)
+
+Parameter设置为厚度，surface选择5，satrt设置为-1.5至+1.5。通过移动滑块，横向像差曲线也会发生变化，即可看到不同视场下，子午光线和弧矢光线在哪里汇聚。
+
+
+
+
+
+
+
+
+
 
 
 
