@@ -297,19 +297,19 @@ TOT   -0.4053   0.1563  -0.2845  -0.1036  -0.2459  -0.5304  -0.0105   0.0000   0
 
 - **0°**
 
-|[![屏幕截图 2025-09-29 144150.png](https://free.picui.cn/free/2025/09/29/68da2aeccc981.png)](https://free.picui.cn/free/2025/09/29/68da2aeccc981.png)|[![屏幕截图 2025-09-29 144419.png](https://free.picui.cn/free/2025/09/29/68da2aed22e93.png)](https://free.picui.cn/free/2025/09/29/68da2aed22e93.png)|
+|[![](https://free.picui.cn/free/2025/09/29/68da2aeccc981.png)](https://free.picui.cn/free/2025/09/29/68da2aeccc981.png)|[![](https://free.picui.cn/free/2025/09/29/68da2aed22e93.png)](https://free.picui.cn/free/2025/09/29/68da2aed22e93.png)|
 |:--:|:--:|
 | 横向光线像差曲线 | 点列图 |
 
 - **7°**
 
-|[![屏幕截图 2025-09-29 144158.png](https://free.picui.cn/free/2025/09/29/68da2aed60c9b.png)](https://free.picui.cn/free/2025/09/29/68da2aed60c9b.png)|[![屏幕截图 2025-09-29 144427.png](https://free.picui.cn/free/2025/09/29/68da2aeced80e.png)](https://free.picui.cn/free/2025/09/29/68da2aeced80e.png)|
+|[![](https://free.picui.cn/free/2025/09/29/68da2aed60c9b.png)](https://free.picui.cn/free/2025/09/29/68da2aed60c9b.png)|[![](https://free.picui.cn/free/2025/09/29/68da2aeced80e.png)](https://free.picui.cn/free/2025/09/29/68da2aeced80e.png)|
 |:--:|:--:|
 | 横向光线像差曲线 | 点列图 |
 
 - **10°**
 
-|[![屏幕截图 2025-09-29 144207.png](https://free.picui.cn/free/2025/09/29/68da2aed32c65.png)](https://free.picui.cn/free/2025/09/29/68da2aed32c65.png)|[![屏幕截图 2025-09-29 144439.png](https://free.picui.cn/free/2025/09/29/68da2aeebaab9.png)](https://free.picui.cn/free/2025/09/29/68da2aeebaab9.png)
+|[![](https://free.picui.cn/free/2025/09/29/68da2aed32c65.png)|[![](https://free.picui.cn/free/2025/09/29/68da2aeebaab9.png)](https://free.picui.cn/free/2025/09/29/68da2aeebaab9.png)
 |:--:|:--:|
 | 横向光线像差曲线 | 点列图 |
 
