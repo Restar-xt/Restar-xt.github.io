@@ -160,10 +160,12 @@ $$N_{i}=\frac{(i+2)(i+4)}{8}$$
 ## 单透镜轴上光线误差
 
 ### SINGLELET 镜头数据
+
 [![镜头数据](https://free.picui.cn/free/2025/09/22/68d1174e611ca.png)](https://free.picui.cn/free/2025/09/22/68d1174e611ca.png)
 
 
 ### 切面光线
+
 [![切面光线](https://free.picui.cn/free/2025/09/22/68d1174e84d4f.png)](https://free.picui.cn/free/2025/09/22/68d1174e84d4f.png)
 
 **现象：光线并不汇聚在一点，而是在距离高斯像面的不同距离处。**
