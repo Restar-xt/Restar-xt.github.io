@@ -182,7 +182,9 @@ $$\text{Coma}\propto \rho^{2}$$
 
 **结果分析：** 各视场横向像差曲线均呈现相同三次函数形态，这与球差不随视场$h$变化的特性相符。
 
-[![模拟各个视场只有慧差时对应的横向像差曲线](https://free.picui.cn/free/2025/09/24/68d3afc081bd7.png)](https://free.picui.cn/free/2025/09/24/68d3afc081bd7.png)
+### 模拟只有彗差的情况
+
+[![模拟各个视场只有彗差时对应的横向像差曲线](https://free.picui.cn/free/2025/09/24/68d3afc081bd7.png)](https://free.picui.cn/free/2025/09/24/68d3afc081bd7.png)
 
 **结果分析：** 纯彗差的横向像差曲线呈U形开放结构，即其**形态随光瞳坐标$\rho$呈二次函数变化。**
 
