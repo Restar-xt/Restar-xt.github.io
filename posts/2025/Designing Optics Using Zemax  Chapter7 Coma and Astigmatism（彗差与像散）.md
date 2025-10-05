@@ -178,11 +178,11 @@ $$\text{Coma}\propto \rho^{2}$$
 
 ### 模拟只有球差的情况
 
-[![模拟的各个视场对应的横向像差曲线](https://free.picui.cn/free/2025/09/24/68d3afc0888b4.png)](https://free.picui.cn/free/2025/09/24/68d3afc0888b4.png)
+[![模拟各个视场只有球差时对应的横向像差曲线](https://free.picui.cn/free/2025/09/24/68d3afc0888b4.png)](https://free.picui.cn/free/2025/09/24/68d3afc0888b4.png)
 
 **结果分析：** 各视场横向像差曲线均呈现相同三次函数形态，这与球差不随视场$h$变化的特性相符。
 
-[![屏幕截图 2025-09-24 164537.png](https://free.picui.cn/free/2025/09/24/68d3afc081bd7.png)](https://free.picui.cn/free/2025/09/24/68d3afc081bd7.png)
+[![模拟各个视场只有慧差时对应的横向像差曲线](https://free.picui.cn/free/2025/09/24/68d3afc081bd7.png)](https://free.picui.cn/free/2025/09/24/68d3afc081bd7.png)
 
 **结果分析：** 纯彗差的横向像差曲线呈U形开放结构，即其**形态随光瞳坐标$\rho$呈二次函数变化。**
 
@@ -345,6 +345,7 @@ TOT    0.0041   0.0027  -0.1512  -0.0561  -0.1317  -0.2829  -0.0073   0.0000   0
 $$\text{Astigmatism}\propto h^{2}\rho$$
 
 描述像散误差时，两个入射光瞳位置尤为重要：一个位于$y-z$ 平面（子午面），另一个与之正交地位于 $x-z$ 平面（弧矢面）。若用蓝色光线绘制通过消球差镜的子午面（$y-z$ 平面）光线扇，同时用红色光线绘制与之垂直的弧矢面（$x-z$ 平面）光线扇，可观察到两个光线扇沿主光线聚焦于不同位置。该透镜中，子午光线聚焦点比弧矢光线聚焦点更靠近透镜。
+
 
 [![像散示意图](https://free.picui.cn/free/2025/09/29/68da3416622c0.png)](https://free.picui.cn/free/2025/09/29/68da3416622c0.png)
 
