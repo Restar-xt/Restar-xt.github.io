@@ -160,11 +160,11 @@ $$N_{i}=\frac{(i+2)(i+4)}{8}$$
 ## 单透镜轴上光线误差
 
 ### SINGLELET 镜头数据
-[![屏幕截图 2025-09-22 173052.png](https://free.picui.cn/free/2025/09/22/68d1174e611ca.png)](https://free.picui.cn/free/2025/09/22/68d1174e611ca.png)
+[![镜头数据](https://free.picui.cn/free/2025/09/22/68d1174e611ca.png)](https://free.picui.cn/free/2025/09/22/68d1174e611ca.png)
 
 
 ### 切面光线
-[![屏幕截图 2025-09-22 173021.png](https://free.picui.cn/free/2025/09/22/68d1174e84d4f.png)](https://free.picui.cn/free/2025/09/22/68d1174e84d4f.png)
+[![切面光线](https://free.picui.cn/free/2025/09/22/68d1174e84d4f.png)](https://free.picui.cn/free/2025/09/22/68d1174e84d4f.png)
 
 **现象：光线并不汇聚在一点，而是在距离高斯像面的不同距离处。**
 
@@ -180,7 +180,9 @@ $$N_{i}=\frac{(i+2)(i+4)}{8}$$
 
 在Zemax中，可以通过**Analyze > Aberration > Longitudinal Aberration**进行直观评判。
 
+
 [![LongitudinalAberration.png](https://free.picui.cn/free/2025/09/22/68d126dca58fb.png)](https://free.picui.cn/free/2025/09/22/68d126dca58fb.png)
+
 
 - 纵坐标：Normalized Pupil Coordinate 归一化入瞳直径，即将入瞳直径缩放到$[0,1]$范围内
 - 纵坐标：Millimeters 主要反映两条对称平行光线交点距离近轴像点的位置，坐标原点为近轴像点。
@@ -246,13 +248,14 @@ $$N_{i}=\frac{(i+2)(i+4)}{8}$$
 
 为了分析具体像差的来源，通常要借助 **像差曲线（transverse ray plot）**、**波像差函数（wavefront aberration）** 或 **Zernike 多项式展开** 等方法。它们能把不同像差成分分开表示，从而帮助设计者明确误差来源。
 
----
 
+::: danger
 区分透镜中特定像差的一种方法是绘制经入瞳（包括子午和弧矢方向）的光线束的偏差（$e_{x}$与$e_{y}$）分布图。
+::: 
 
----
 
----
+
+::: warning
 **<font color='red'>横向像差曲线的原理</font>**
 
 [![绘制示意图](https://free.picui.cn/free/2025/09/22/68d154a9f28c0.png)](https://free.picui.cn/free/2025/09/22/68d154a9f28c0.png)
@@ -266,7 +269,7 @@ $$N_{i}=\frac{(i+2)(i+4)}{8}$$
 - 横向像差曲线的横轴：表示出瞳位置$\rho_{x}$、$\rho_{y}$
 - 横向像差曲线的纵轴：表示横向偏差$e_{x}$、$e_{y}$
 
----
+:::
 
 在Zemax中，通过**Analyze > Rays & Spots > Ray Aberration**即可绘制出子午、弧矢两个方向上的横向像差曲线图。
 
