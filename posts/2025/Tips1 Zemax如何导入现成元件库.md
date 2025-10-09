@@ -1,3 +1,18 @@
+---
+title: Tips1 Zemax导入现货光学元件
+tags: [Zemax]
+categories: [光设软件TIPS]
+date: 2025-10-09
+description: 
+articleGPT: 本章主要介绍如何在Zemax中导入现货光学元件库以及如何使用现货光学元件库
+references:
+  - title: 爱特蒙特Zemax现货光学元件目录
+  - url: https://www.edmundoptics.cn/products/services/zemax-catalog
+   
+---
+
+
+
 # Tips1 Zemax导入现货光学元件
 
 > **参考：**
@@ -28,3 +43,4 @@
 将zmf文件复制粘贴至Stockcat文件夹即可。
 
 ## Zemax使用现货光学元件
+
