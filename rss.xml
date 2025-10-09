@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Restar_xt's blog</title>
+        <link>https://xiaotong.blog</link>
+        <description>Chasing the light and control it</description>
+        <lastBuildDate>Thu, 09 Oct 2025 04:53:47 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Restar_xt</generator>
+        <language>zh</language>
+        <copyright>Copyright © 2020-present Restar_xt</copyright>
+        <item>
+            <title><![CDATA[Tips1 Zemax导入现货光学元件]]></title>
+            <link>https://xiaotong.blog/posts/2025/Tips1 Zemax如何导入现成元件库</link>
+            <guid>https://xiaotong.blog/posts/2025/Tips1 Zemax如何导入现成元件库</guid>
+            <pubDate>Thu, 09 Oct 2025 00:00:00 GMT</pubDate>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[Designing Optics Using Zemax Chapter9  Chromatic Aberration（色差）]]></title>
+            <link>https://xiaotong.blog/posts/2025/Designing Optics Using Zemax  Chapter9  Chromatic Aberration（色差）</link>
+            <guid>https://xiaotong.blog/posts/2025/Designing Optics Using Zemax  Chapter9  Chromatic Aberration（色差）</guid>
+            <pubDate>Wed, 08 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 《Designing Optics Using Zemax》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[全景环带光学系统设计参数]]></title>
+            <link>https://xiaotong.blog/posts/2025/全景环带光学系统—面临的挑战与设计参数</link>
+            <guid>https://xiaotong.blog/posts/2025/全景环带光学系统—面临的挑战与设计参数</guid>
+            <pubDate>Sat, 27 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 Review on panoramic imaging and its applications in scene understanding]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[Designing Optics Using Zemax Chapter7 Coma and Astigmatism（彗差与像散）]]></title>
+            <link>https://xiaotong.blog/posts/2025/Designing Optics Using Zemax  Chapter7 Coma and Astigmatism（彗差与像散）</link>
+            <guid>https://xiaotong.blog/posts/2025/Designing Optics Using Zemax  Chapter7 Coma and Astigmatism（彗差与像散）</guid>
+            <pubDate>Wed, 24 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 《Designing Optics Using Zemax》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[Designing Optics Using Zemax Chapter8 Aberrations of the Image  Surface-Petzval curvature and distortion（匹兹凡场曲和畸变）]]></title>
+            <link>https://xiaotong.blog/posts/2025/Designing Optics Using Zemax  Chapter8 Aberrations of the Image  Surface-Petzval curvature and distortion（匹兹凡场曲和畸变）</link>
+            <guid>https://xiaotong.blog/posts/2025/Designing Optics Using Zemax  Chapter8 Aberrations of the Image  Surface-Petzval curvature and distortion（匹兹凡场曲和畸变）</guid>
+            <pubDate>Wed, 24 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 《Designing Optics Using Zemax》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[Designing Optics Using Zemax Chapter6 Spherical Aberration  （球差）]]></title>
+            <link>https://xiaotong.blog/posts/2025/Designing Optics Using Zemax Chapter6 Spherical Aberration</link>
+            <guid>https://xiaotong.blog/posts/2025/Designing Optics Using Zemax Chapter6 Spherical Aberration</guid>
+            <pubDate>Tue, 23 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 《Designing Optics Using Zemax》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[Ray geometrical optics-Chapter3 Optical aberrations 光学像差]]></title>
+            <link>https://xiaotong.blog/posts/2025/Ray geometrical optics-Chapter3 Optical aberrations 光学像差</link>
+            <guid>https://xiaotong.blog/posts/2025/Ray geometrical optics-Chapter3 Optical aberrations 光学像差</guid>
+            <pubDate>Mon, 22 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 《Optical imaging and aberrations part I. Ray geometrical optics》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[光学系统设计第二章②-初级像差及其光束结构]]></title>
+            <link>https://xiaotong.blog/posts/2025/光学系统设计第二章②初级像差及其光束结构</link>
+            <guid>https://xiaotong.blog/posts/2025/光学系统设计第二章②初级像差及其光束结构</guid>
+            <pubDate>Thu, 28 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考浙江大学-李晓彤老师-光学系统设计课程]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[Designing Optics Using Zemax Chapter5 Stops&Pupils&Windows （光阑+光瞳+出入射窗）]]></title>
+            <link>https://xiaotong.blog/posts/2025/Designing Optics Using Zemax Chapter5 Stops&amp;Pupils&amp;Windows</link>
+            <guid>https://xiaotong.blog/posts/2025/Designing Optics Using Zemax Chapter5 Stops&amp;Pupils&amp;Windows</guid>
+            <pubDate>Mon, 18 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 《Designing Optics Using Zemax》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+        <item>
+            <title><![CDATA[光学系统设计第二章①-初级像差理论]]></title>
+            <link>https://xiaotong.blog/posts/2025/光学系统设计第二章①-初级像差理论</link>
+            <guid>https://xiaotong.blog/posts/2025/光学系统设计第二章①-初级像差理论</guid>
+            <pubDate>Thu, 07 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考浙江大学-李晓彤老师-光学系统设计课程]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (Restar_xt)</author>
+        </item>
+    </channel>
+</rss>
