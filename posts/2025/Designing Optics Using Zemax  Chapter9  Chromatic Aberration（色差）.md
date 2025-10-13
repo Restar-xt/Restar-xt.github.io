@@ -2,7 +2,7 @@
 title: Designing Optics Using Zemax Chapter9  Chromatic Aberration（色差）
 tags: [Zemax]
 categories: [光设软件基础-Zemax]
-date: 2025-10-08
+date: 2025-10-13
 description: 本笔记参考 《Designing Optics Using Zemax》
 articleGPT: 本章主要介绍在在将镜头输入 OpticStudio® 后，如何分析系统色差。
 references:
