@@ -1,3 +1,16 @@
+---
+title: Designing Optics Using Zemax Chapter10 Reducing Aberrations（优化函数-减少像差）
+tags: [Zemax]
+categories: [光设软件基础-Zemax]
+date: 2025-10-14
+description: 本笔记参考 《Designing Optics Using Zemax》
+articleGPT: 在本章中，我们将重点探讨通过OpticStudio的局部优化功能（Optimize > Optimize!）来降低第六至八章中识别的初级像差。需特别说明的是，该手段非全面的镜头性能优化方案。实践中，单纯消减初级像差并不可取——由于实际镜头可能具备大孔径和/或大视场特性，会引发高阶像差。将初级像差归零化处理会阻碍其与高阶像差形成平衡（通常导致成像质量恶化）。
+references:
+  - title: 《Designing Optics Using Zemax OpticStudio》
+  - url: https://ebooks.spiedigitallibrary.org/ebooks/PM/designing-optics-using-zemax-opticstudio/eISBN-9781510668577/10.1117/3.100004
+   
+---
+
 # 《Designing Optics Using Zemax 》 Chapter10 Reducing Aberrations（优化函数-减少像差）
 > **参考书目：**  
 > 《Designing Optics Using Zemax OpticStudio》 SPIE Press     &ensp;      Donald O’Shea and Julie Bentley 
@@ -282,5 +295,6 @@ TOT   -0.02462   0.00000   0.00686  -0.02011  -0.01667  -0.00981  -0.05700   0.0
 ### 一个对比
 
 &emsp;&emsp;
+
 
 
