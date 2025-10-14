@@ -290,11 +290,74 @@ TOT   -0.02462   0.00000   0.00686  -0.02011  -0.01667  -0.00981  -0.05700   0.0
 
 &emsp;&emsp;略。
 
-## Reducing Distortion 减少畸变
+## 优化实例4：Reducing Distortion 减少畸变
 
 ### 一个对比
 
-&emsp;&emsp;
+&emsp;&emsp;将上文中的风景镜头第2-4面在LDE中选中，使用翻转功能反转镜头结构。
+
+- 原始风景镜头数据
+  
+  [![原始风景镜头数据](https://free.picui.cn/free/2025/10/14/68ee420388882.png)](https://free.picui.cn/free/2025/10/14/68ee420388882.png)
+
+- 反转风景镜头数据
+  
+  反转之后，通过Quick Focus找到最佳像面。
+
+  [![反转操作](https://free.picui.cn/free/2025/10/14/68ee4280494e9.png)](https://free.picui.cn/free/2025/10/14/68ee4280494e9.png)
+
+  [![反转风景镜头数据](https://free.picui.cn/free/2025/10/14/68ee42e35b4db.png)](https://free.picui.cn/free/2025/10/14/68ee42e35b4db.png)
+
+- 原始风景镜头场曲系数TDIS -0.0529
+- 反转风景镜头场曲系数TDIS 0.1001
+  
+&emsp;&emsp;观察上面的结果不难发现，镜头反转后的畸变正负号发生变化，即枕形畸变转化为桶形畸变。将二者的场曲曲线绘制在同一坐标系如下图，其中虚线代表原始镜头，实线代表反转镜头。那么二者结合正负相消会不会消除畸变？
+
+[![场曲图](https://free.picui.cn/free/2025/10/14/68ee44880f4b1.png)](https://free.picui.cn/free/2025/10/14/68ee44880f4b1.png)
+  
+
+### 建立对称结构
+
+&emsp;&emsp;考虑上述现象，使用反转风景镜头数据，利用Zemax中的**pickup**对镜头数据进行“拾取”，拾取的参数在原参数变化时同样发生变化。
+
+[![厚度拾取](https://free.picui.cn/free/2025/10/14/68ee5d67292c3.png)](https://free.picui.cn/free/2025/10/14/68ee5d67292c3.png)
+
+[![半径拾取](https://free.picui.cn/free/2025/10/14/68ee5d67296b9.png)](https://free.picui.cn/free/2025/10/14/68ee5d67296b9.png)
+
+&emsp;&emsp;From Surface选择拾取哪一表面，Surface Factor填入缩放数值。注意对于半径，要遵循对称设计需要填入负值。拾取完毕后，使用Quick Focus寻找到最佳像面位置。
+
+[![完整的LDE数据](https://free.picui.cn/free/2025/10/14/68ee5e4f157ca.png)](https://free.picui.cn/free/2025/10/14/68ee5e4f157ca.png)
+
+&emsp;&emsp;由于镜头焦距并非50mm，可以利用Zemax缩放功能将焦距缩放至50mm。（**Setup > Scale Lens**）
+
+[![缩放焦距](https://free.picui.cn/free/2025/10/14/68ee5ff1d1992.png)](https://free.picui.cn/free/2025/10/14/68ee5ff1d1992.png)
+
+[![对称设计后的初始切面图.png](https://free.picui.cn/free/2025/10/14/68ee60b79b630.png)](https://free.picui.cn/free/2025/10/14/68ee60b79b630.png)
+
+&emsp;&emsp;原始像差系数如下：
+
+```
+THIRD
+Primary Wavelength: 0.5876 um
+Surf TSPH TTCO TAST TPFC TSFC TTFC TDIS TAXC TLAC
+  1   -0.00628  -0.01177  -0.00490  -0.02748  -0.02993  -0.03484  -0.01871  -0.00000  -0.00000
+  2   -0.00007   0.00320  -0.03108   0.00738  -0.00817  -0.03925   0.11886   0.00000  -0.00000
+STO    0.00000  -0.00000   0.00000  -0.00000  -0.00000  -0.00000  -0.00000   0.00000  -0.00000
+  4    0.00144  -0.01475   0.03368   0.00738   0.02422   0.05790  -0.08294   0.00000  -0.00000
+  5   -0.01244   0.01903  -0.00647  -0.02748  -0.03072  -0.03719   0.01567   0.00000  -0.00000
+IMA   -0.00000  -0.00000  -0.00000  -0.00000  -0.00000  -0.00000  -0.00000   0.00000  -0.00000
+TOT   -0.01735  -0.00428  -0.00877  -0.04021  -0.04460  -0.05338   0.03287   0.00000   0.00000
+```
+&emsp;&emsp;初始TDIS为0.03287
+
+### 物像对称性/共轭
+
+&emsp;&emsp;尽管透镜组件呈对称结构，但由于物距为无穷远而像距为有限距离（30.073 mm），系统仍存在畸变。要实现光阑中心完美对称（从而消除畸变），物距与像距必须相等，此时物距将无法保持无穷远。**对于有限物距系统，宜采用物高或像高（而非物方视场角）定义视场。** 首先需设定有限物距：**将物距设为100 mm。然后将视场类型更改为"Object Height"，视场数值单位将由度转为0 mm、7 mm和10 mm。通过对最后一片透镜厚度施加边缘光线高度求解，确定系统的近轴像面位置。**
+
+[![视场设置](https://free.picui.cn/free/2025/10/14/68ee63d7d0b8e.png)](https://free.picui.cn/free/2025/10/14/68ee63d7d0b8e.png)
+
+[![设置物距有限后的LDE](https://free.picui.cn/free/2025/10/14/68ee64168a153.png)](https://free.picui.cn/free/2025/10/14/68ee64168a153.png)
+
 
 
 
