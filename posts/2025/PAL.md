@@ -1,5 +1,5 @@
 <iframe
-  src="/pal-num-vs-year.html"
+  src="/PAL-EFFL.html"
   width="100%"
   height="650"
   frameborder="0"
