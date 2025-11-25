@@ -1,7 +1,7 @@
 ---
 title: 2000~2025 PAL各参数研究现状
 tags: [PAL]
-categories: [光设软件基础-Zemax]
+categories: [全景环带光学系统]
 date: 2025-11-25
 description: 参考课题组2007-2025的所有有关PAL设计的文章，梳理了焦距、镜片数等参数的分布情况。
 articleGPT: 参考课题组2007-2025的所有有关PAL设计的文章，梳理了焦距、镜片数等参数的分布情况。
