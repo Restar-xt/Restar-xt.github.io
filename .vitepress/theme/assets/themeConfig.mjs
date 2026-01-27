@@ -197,9 +197,9 @@ export const themeConfig = {
       coverLayout: 'right',
       // 默认封面(随机展示)
       defaultCover: [
-        'https://picui.cn/thumbnails/3613b7628dcb58d5a17e10b51234e8ec.png',
-        'https://picui.cn/thumbnails/d525a8b821c06a84a491d19127dccc7e.png',
-        'https://picui.cn/thumbnails/75970178f2aa9a5a25f0f6f16c05c43e.png'
+        'https://img.imgos.cn/cdn/20260127/750f204c0757ab7ad424e2cc83fd0b64.jpg',
+        'https://img.imgos.cn/cdn/20260127/9dc89b37624b782deddb6830ca5da738.jpg',
+        'https://img.imgos.cn/cdn/20260127/a0a41b1a2066991f5471c19bf9501c3b.jpg'
       ]
     }
   },
