@@ -3,13 +3,13 @@ export const themeConfig = {
   // 站点信息
   siteMeta: {
     // 站点标题
-    title: "Restar_xt's blog",
+    title: "StarBling's blog",
     // 站点描述
     description: "Chasing the light and control it",
     // 站点logo
     logo: "/images/logo/logo.webp",
     // 站点地址
-    site: "https://xiaotong.blog",
+    site: "https://starbling.blog",
     // 语言
     lang: "zh-CN",
     // 作者
@@ -17,7 +17,7 @@ export const themeConfig = {
       name: "Restar_xt",
       cover: "/images/logo/logo.webp",
       email: "xiaotongzhang.zxt@gmail.com",
-      link: "https://www.xiaotong.blog",
+      link: "https://www.starbling.blog",
     },
   },
   // 备案信息
