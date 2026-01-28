@@ -17,7 +17,7 @@ jobs:
     env:
       REPO_URL: "Restar-xt/Restar-xt.github.io"  # 远程仓库的 URL
       BUILD_PATH: ".vitepress/dist"  # 构建输出路径
-      CUSTOM_DOMAIN: "xiaotong.blog"  # 自定义域名
+      CUSTOM_DOMAIN: "starbling.blog"  # 自定义域名
 
     steps:
       - name: Set up Node.js
