@@ -5,7 +5,7 @@
       <!-- 介绍 -->
       <div class="about-item hello">
         <span class="text1">你好，很高兴认识你👋</span>
-        <span class="text2 title2">我是 Restar_xt</span>
+        <span class="text2 title2">我是 StarBling</span>
         <span class="text3">是浙江大学在读硕士生</span>
       </div>
       <!-- 追求 -->
