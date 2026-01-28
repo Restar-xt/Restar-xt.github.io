@@ -3,27 +3,7 @@
     <nav :class="['main-nav', scrollData.direction, { top: scrollData.height === 0 }]">
       <div class="nav-all">
         <!-- 导航栏左侧 -->
-        <div class="left-nav">
-          <div class="more-menu nav-btn" title="更多内容">
-            <i class="iconfont icon-menu" />
-            <div class="more-card s-card">
-              <div v-for="(item, index) in theme.navMore" :key="index" class="more-item">
-                <span class="more-name">{{ item.name }}</span>
-                <div class="more-list">
-                  <a
-                    v-for="(link, i) in item.list"
-                    :key="i"
-                    :href="link.url"
-                    class="more-link"
-                    target="_blank"
-                  >
-                    <img class="link-icon" :src="link.icon" :alt="link.name" />
-                    <span class="link-name">{{ link.name }}</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+        
           <div class="site-name" @click="router.go('/')">
             {{ site.title }}
           </div>
