@@ -14,7 +14,7 @@ export const themeConfig = {
     lang: "zh-CN",
     // 作者
     author: {
-      name: "Restar_xt",
+      name: "StarBling",
       cover: "/images/logo/logo.webp",
       email: "xiaotongzhang.zxt@gmail.com",
       link: "https://www.starbling.blog",
