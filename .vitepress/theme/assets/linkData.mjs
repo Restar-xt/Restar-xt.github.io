@@ -16,10 +16,10 @@ const linkData = [
     typeDesc: "我们在一起，共同进步",
     typeList: [
       {
-        name: "zxt's blog",
+        name: "StarBling's blog",
         avatar: "/images/logo/logo.webp",
         desc: "Chasing the Light and Control it",
-        url: "https://xiaotong.blog/",
+        url: "https://starbling.blog/",
       },
     ],
   },
