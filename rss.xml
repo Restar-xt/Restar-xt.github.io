@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>StarBling's blog</title>
+        <link>https://starbling.blog</link>
+        <description>Chasing the light and control it</description>
+        <lastBuildDate>Mon, 02 Feb 2026 01:57:34 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>StarBling</generator>
+        <language>zh</language>
+        <copyright>Copyright © 2020-present StarBling</copyright>
+        <item>
+            <title><![CDATA[基础成像系统01：双胶合消色差物镜的设计]]></title>
+            <link>https://starbling.blog/posts/2026/近现代光学系统设计概论第4章1-双胶合消色差物镜</link>
+            <guid>https://starbling.blog/posts/2026/近现代光学系统设计概论第4章1-双胶合消色差物镜</guid>
+            <pubDate>Mon, 26 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 《近现代光学系统设计概论》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (StarBling)</author>
+        </item>
+        <item>
+            <title><![CDATA[2000~2025 PAL各参数研究现状]]></title>
+            <link>https://starbling.blog/posts/2025/PAL参数演变情况</link>
+            <guid>https://starbling.blog/posts/2025/PAL参数演变情况</guid>
+            <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[参考课题组2007-2025的所有有关PAL设计的文章，梳理了焦距、镜片数等参数的分布情况。]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (StarBling)</author>
+        </item>
+        <item>
+            <title><![CDATA[全景环带光学系统原理]]></title>
+            <link>https://starbling.blog/posts/2025/全景环带光学系统—面临的挑战与设计参数</link>
+            <guid>https://starbling.blog/posts/2025/全景环带光学系统—面临的挑战与设计参数</guid>
+            <pubDate>Fri, 17 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 Review on panoramic imaging and its applications in scene understanding]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (StarBling)</author>
+        </item>
+        <item>
+            <title><![CDATA[OE22-Compact and lightweight panoramic annular lens for computer vision tasks]]></title>
+            <link>https://starbling.blog/posts/2025/OE22：Compact and lightweight panoramic annular lens for computer vision tasks</link>
+            <guid>https://starbling.blog/posts/2025/OE22：Compact and lightweight panoramic annular lens for computer vision tasks</guid>
+            <pubDate>Thu, 16 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Shaohua Gao-用于计算机视觉任务的紧凑轻型全景环带镜头。]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (StarBling)</author>
+        </item>
+        <item>
+            <title><![CDATA[Designing Optics Using Zemax Chapter10 Reducing Aberrations（优化函数-减少像差）]]></title>
+            <link>https://starbling.blog/posts/2025/Designing Optics Using Zemax   Chapter10 Reducing Aberrations（优化函数-减少像差）</link>
+            <guid>https://starbling.blog/posts/2025/Designing Optics Using Zemax   Chapter10 Reducing Aberrations（优化函数-减少像差）</guid>
+            <pubDate>Tue, 14 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 《Designing Optics Using Zemax》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (StarBling)</author>
+        </item>
+        <item>
+            <title><![CDATA[Designing Optics Using Zemax Chapter9  Chromatic Aberration（色差）]]></title>
+            <link>https://starbling.blog/posts/2025/Designing Optics Using Zemax  Chapter9  Chromatic Aberration（色差）</link>
+            <guid>https://starbling.blog/posts/2025/Designing Optics Using Zemax  Chapter9  Chromatic Aberration（色差）</guid>
+            <pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 《Designing Optics Using Zemax》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (StarBling)</author>
+        </item>
+        <item>
+            <title><![CDATA[Tips1 Zemax导入现货光学元件]]></title>
+            <link>https://starbling.blog/posts/2025/Tips1 Zemax如何导入现成元件库</link>
+            <guid>https://starbling.blog/posts/2025/Tips1 Zemax如何导入现成元件库</guid>
+            <pubDate>Thu, 09 Oct 2025 00:00:00 GMT</pubDate>
+            <author>xiaotongzhang.zxt@gmail.com (StarBling)</author>
+        </item>
+        <item>
+            <title><![CDATA[Designing Optics Using Zemax Chapter7 Coma and Astigmatism（彗差与像散）]]></title>
+            <link>https://starbling.blog/posts/2025/Designing Optics Using Zemax  Chapter7 Coma and Astigmatism（彗差与像散）</link>
+            <guid>https://starbling.blog/posts/2025/Designing Optics Using Zemax  Chapter7 Coma and Astigmatism（彗差与像散）</guid>
+            <pubDate>Wed, 24 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 《Designing Optics Using Zemax》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (StarBling)</author>
+        </item>
+        <item>
+            <title><![CDATA[Designing Optics Using Zemax Chapter8 Aberrations of the Image  Surface-Petzval curvature and distortion（匹兹凡场曲和畸变）]]></title>
+            <link>https://starbling.blog/posts/2025/Designing Optics Using Zemax  Chapter8 Aberrations of the Image  Surface-Petzval curvature and distortion（匹兹凡场曲和畸变）</link>
+            <guid>https://starbling.blog/posts/2025/Designing Optics Using Zemax  Chapter8 Aberrations of the Image  Surface-Petzval curvature and distortion（匹兹凡场曲和畸变）</guid>
+            <pubDate>Wed, 24 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 《Designing Optics Using Zemax》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (StarBling)</author>
+        </item>
+        <item>
+            <title><![CDATA[Designing Optics Using Zemax Chapter6 Spherical Aberration  （球差）]]></title>
+            <link>https://starbling.blog/posts/2025/Designing Optics Using Zemax Chapter6 Spherical Aberration</link>
+            <guid>https://starbling.blog/posts/2025/Designing Optics Using Zemax Chapter6 Spherical Aberration</guid>
+            <pubDate>Tue, 23 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[本笔记参考 《Designing Optics Using Zemax》]]></description>
+            <author>xiaotongzhang.zxt@gmail.com (StarBling)</author>
+        </item>
+    </channel>
+</rss>
