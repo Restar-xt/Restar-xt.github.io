@@ -46,7 +46,7 @@
         <div class="list">
           <span class="list-item" style="--color: #357ef5">2025-2028(expected) · 浙江大学ZJU · 光电信息工程硕士</span>
           <span class="list-item" style="--color: #eb372a">2021-2025 · 电子科技大学UESTC · 光电信息科学与工程学士</span>
-          <span class="list-item" style="--color: #eb372a">2022-2024 · 电子科技大学UESTC · 现代光电测控与仪器实验室MOMILE LAB · 研究学生</span>
+          <span class="list-item" style="--color: #eb372a">2022-2024 · 电子科技大学UESTC · 现代光电测控与仪器实验室MOMILE LAB </span>
         </div>
   
       </div>
