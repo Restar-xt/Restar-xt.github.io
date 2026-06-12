@@ -304,8 +304,8 @@ export const themeConfig = {
       enable: true,
       // 倒计时日期
       data: {
-        name: "春节",
-        date: "2026-02-17",
+        name: "论文实验DDL",
+        date: "2026-07-25",
       },
     },
     // 站点数据
